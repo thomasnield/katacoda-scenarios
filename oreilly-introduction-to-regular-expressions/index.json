@@ -7,7 +7,7 @@
     "steps": [{
       "title": "Literals and Character Ranges",
       "text": "step1.md",
-	  "courseData" : "testbash.sh"
+	  "courseData" : "initialize.sh"
     }],
     "intro": {
       "text": "intro.md",
