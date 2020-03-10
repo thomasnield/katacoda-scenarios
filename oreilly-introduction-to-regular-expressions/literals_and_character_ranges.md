@@ -20,7 +20,7 @@ def regex_match(pattern, string):
 		return "match"
 	else:
 		return "Doesn't match"
-```
+```{{execute}}
 
 To test for a regular expression match, we will use the `fullmatch()` function like this. The `pattern` is the regular expression we want to test. The `string` is the text we test the regular expression against. 
 
