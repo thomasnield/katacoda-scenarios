@@ -6,12 +6,13 @@
   "details": {
     "steps": [{
       "title": "Literals and Character Ranges",
-      "text": "step1.md"
+      "text": "step1.md",
+	  "code" : "initialize.sh"
 	}],
     "intro": {
       "text": "intro.md",
       "credits": "",
-	  "code" : "courseBase.sh"
+	  "code" : "initialize.sh"
     },
     "finish": {
       "text": "finish.md"
