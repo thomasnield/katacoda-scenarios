@@ -6,7 +6,7 @@
   "details": {
     "steps": [{
       "title": "Literals and Character Ranges",
-      "text": "literals_and_character_ranges.md"
+      "text": "literals_and_character_ranges.md",
 	}],
     "intro": {
       "text": "intro.md",
