@@ -1,4 +1,4 @@
-This is your first step.
+Many data science, analyst, and technology professionals have encountered regular expressions at some point. This esoteric, miniature language is used for matching complex text patterns, and looks mysterious and intimidating at first. 
 
 ## Task
 

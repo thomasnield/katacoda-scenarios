@@ -5,8 +5,9 @@
   "time": "40 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Literals and Character Ranges",
       "text": "step1.md"
+	  "courseData" : "testbash.sh"
     }],
     "intro": {
       "text": "intro.md",
