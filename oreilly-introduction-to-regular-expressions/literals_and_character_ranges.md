@@ -13,13 +13,12 @@ Next import the regular expression functionality called `re`.
 We are going to create a simple helper function to test for regular expression matches quickly. 
 
 ```
-def regex_match(pattern, string):
-	result = re.fullmatch(pattern="[A-Z]{2}", string="TX")
-
-	if result:
-		return "match"
-	else:
-		return "Doesn't match"
+def regex_match(regex, str):
+    result = re.fullmatch(pattern=regex, string=str)
+    if result:
+        return "match"
+    else:
+        return "Doesn't match"
 ```{{execute}}
 
 To test for a regular expression match, we will use the `fullmatch()` function like this. The `pattern` is the regular expression we want to test. The `string` is the text we test the regular expression against. 
