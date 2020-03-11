@@ -25,15 +25,13 @@ AA MDW JFK 12:45 14:35 180
 
 echo "
 import re
-from pathlib import Path
-
 
 def load_file(filepath):
-	file = open('my_text_file',mode='r')
-	text = file.read()
-	file.close()
-	return text 
-	
+    file = open(filepath, mode='r')
+    text = file.read()
+    file.close()
+    return text 
+
 def regex_match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
     if result:
