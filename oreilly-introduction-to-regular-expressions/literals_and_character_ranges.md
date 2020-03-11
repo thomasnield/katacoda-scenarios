@@ -66,3 +66,12 @@ To negate characters, meaning you want anything but the specified characters, st
 `regex_match(regex="[^AEIOU]", str="X")`{{execute}}
 
 `regex_match(regex="[^AEIOU]", str="E")`{{execute}}
+
+If you want a literal dash – character to be part of the character range, declare it first in the range.
+
+`regex_match(regex="[-0-9][0-9]", str="-9")`{{execute}}
+
+`regex_match(regex="[-0-9][0-9]", str="89")`{{execute}}
+
+
+Next let's talk about anchoring!
