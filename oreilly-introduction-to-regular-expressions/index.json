@@ -1,6 +1,6 @@
 {
   "title": "Introduction to Regular Expressions",
-  "description": "Learn Common Regular Expression Functionality",
+  "description": "Learn Common Regular Expression Functionality Fast!",
   "difficulty": "beginner",
   "time": "40 minutes",
   "details": {
@@ -19,8 +19,8 @@
 	"files" : ["regex_helper.py"]
   },
   "environment": {
-    "uilayout": "editor-terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mIntroduction to Regular Expressions"
   },
   "backend": {
     "imageid": "bash"
