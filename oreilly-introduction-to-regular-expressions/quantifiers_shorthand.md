@@ -2,7 +2,7 @@ There are some quantifiers that are so commonly used they have a shorthand symbo
 
 ## 0 or 1 Repetition (a.k.a., optional)
 
-There are a couple of shorthand symbols for common quantifiers. Take this case where we allow 0 or 1 instances of a numeric digit, making it optional. 
+Take this case where we allow 0 or 1 instances of a numeric digit, making it optional. 
 
 `match(regex="[0-9]{0,1}[A-Z]{2}", str="BC")`{{execute}}
 
@@ -35,7 +35,7 @@ Take a quantifier that specifies we need a minimum of one instance of a pattern,
 `match(regex="[XYZ]{1,}[0-9]{1,}", str="XYZZZYZXXX2374676128963453452990")`{{execute}}
 
 
-A `+` is shorthand for this `{1,}` operations, which requires a minimum of 1 repetition, but will capture any number of repetitions after that.
+A `+` is shorthand substitute for `{1,}`, which requires a minimum of 1 repetition, but will capture any number of repetitions after that.
 
 `match(regex="[XYZ]+", str="Z")`{{execute}}
 
