@@ -71,8 +71,23 @@ French Macaroons (24 servings)
 
 Beat eggs in bowl and then add sugar.
 
-Let sit for 2 minutes and continue
+Let sit for 2 minutes and continue beating
 """)
 ```{{execute}}
 
-As we can see, the letter "e" is returned. 
+As we can see, the letter "g" is returned. 
+
+
+###Forcing a Full Match
+
+Depending on your environment, using both the start-of-line `^` and end-of-line `$` together can be helpful to force a full match and ignore partial ones. This is because qualifying the start `^` and end `$` of a line forces everything between them to be the only contents allowed in the input.
+
+For example, we can force a full match of 2 digits and not qualify a partial match that exists in 3 or more digits.
+
+`regex_match(regex="^[0-9][0-9]$", str="23")`{{execute}}
+
+`regex_match(regex="^[0-9][0-9]$", str="237")`{{execute}}
+
+
+Our `regex_match()` function is configured to do a full match, not a partial one, so in this case it is unnecessary to do anchoring. But if you are ever in doubt, it is a good habit to anchor if you are unsure whether a platform does full or partial matches. This will also make the regular expression more portable. 
+
