@@ -22,9 +22,7 @@ def regex_match(regex, str):
     if result:
         return "Match"
     else:
-        return "Doesn't match"
-
-```{{execute}}
+        return "Doesn't match"```{{execute}}
 
  Let's test our first regular expression.
 
