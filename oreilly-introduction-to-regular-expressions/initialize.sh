@@ -34,7 +34,7 @@ def load_file(filepath):
     return text
 
 
-def regex_match(regex, str):
+def match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
     if result:
         return 'MATCH'
@@ -42,13 +42,13 @@ def regex_match(regex, str):
         return 'NO MATCH'
 
 
-def regex_findall(regex, file):
+def findall(regex, file):
     return re.findall(regex, load_file(file), re.MULTILINE)" >> regex_helper.py
 		
 		
 python3
 
-from regex_helper import regex_match, regex_findall
+from regex_helper import match, findall
 
-import os
-os.system('clear')
+# import os
+# os.system('clear')
