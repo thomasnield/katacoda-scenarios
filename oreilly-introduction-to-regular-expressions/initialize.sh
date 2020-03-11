@@ -50,5 +50,5 @@ python3
 
 from regex_helper import match, findall
 
-# import os
-# os.system('clear')
+import os
+os.system('clear')
