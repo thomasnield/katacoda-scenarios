@@ -16,14 +16,7 @@
     "finish": {
       "text": "finish.md"
     },
-	  "assets": {
-    "client": [
-      {
-        "file": "regex_helper.py",
-        "target": "~/"
-      }
-    ]
-  }
+	files ["regex_helper.py"]
   },
   "environment": {
     "uilayout": "editor-terminal",
