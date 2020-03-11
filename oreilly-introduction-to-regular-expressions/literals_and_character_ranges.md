@@ -1,14 +1,11 @@
 
-This environment has been set up to have a simple function called `regex_match(regex, str)`, which is what we will use to test our regular expressions with. 
+This environment has been set up to have a simple function called `regex_match(regex, str)`, which is what we will use to test our regular expressions with. Try it out! 
 
 `regex_match(regex="[A-Z]{2}", str="TX")`{{execute}}
 
-The first argument `regex` is our regular expression, and the second argument `str` is the string we are matching against.
+The first argument `regex` is our regular expression, and the second argument `str` is the string we are matching against. The function will return either `MATCH` or `NO MATCH`. 
 
-The function will return either `MATCH` or `NO MATCH`. 
-
-For the curious this is actually set up in a Python3 environment using the following implementation: 
-
+> For the curious this is actually set up in a Python3 environment using the following implementation: 
 ```python
 import re
 

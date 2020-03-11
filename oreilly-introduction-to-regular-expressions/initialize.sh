@@ -10,7 +10,10 @@ def regex_match(regex, str):
     if result:
         return 'MATCH'
     else:
-        return 'NO MATCH'" >> regex_helper.py
+        return 'NO MATCH'
+
+def regex_findall(regex, str):
+    return re.findall(regex, str)" >> regex_helper.py
 		
 		
 python3
