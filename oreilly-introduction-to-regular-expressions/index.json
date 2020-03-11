@@ -1,6 +1,6 @@
 {
   "title": "Introduction to Regular Expressions",
-  "description": "Learn Common Regular Expression Functionality Fast!",
+  "description": "Learn How to Search and Parse Text Fast!",
   "difficulty": "beginner",
   "time": "40 minutes",
   "details": {
@@ -11,7 +11,7 @@
 	{
       "title": "Character Ranges",
       "text": "character_ranges.md"
-	}
+	},
 	{
       "title": "Anchoring",
       "text": "anchors.md"
