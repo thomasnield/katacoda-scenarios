@@ -27,6 +27,13 @@ echo "
 import re
 from pathlib import Path
 
+
+def load_file(filepath):
+	file = open('my_text_file',mode='r')
+	text = file.read()
+	file.close()
+	return text 
+	
 def regex_match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
     if result:
@@ -35,7 +42,7 @@ def regex_match(regex, str):
         return 'NO MATCH'
 
 def regex_findall(regex, file):
-    return re.findall(regex,  Path(file).read_text(), re.MULTILINE)" >> regex_helper.py
+    return re.findall(regex,  load_file(file), re.MULTILINE)" >> regex_helper.py
 		
 		
 python3
