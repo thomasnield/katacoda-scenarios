@@ -23,6 +23,14 @@
 	{
       "title": "Shorthand Quantifiers",
       "text": "quantifiers_shorthand.md"
+	},
+	{
+      "title": "Wildcards",
+      "text": "wildcards.md"
+	},
+	{
+      "title": "Groups and Alternators",
+      "text": "groups_and_alternators.md"
 	}
 	],
     "intro": {
