@@ -51,7 +51,7 @@ def find(regex, str):
     if result:
         return result[0]
     else:
-        return "NO MATCH"
+        return 'NO MATCH'
 
 
 def findall(regex, file):
