@@ -22,6 +22,8 @@ In regular expressions, alphanumeric characters (letters A-Z and numbers 0-9) ar
 
 `regex_match(regex="TX", str="TX")`{{execute}}
 
+`regex_match(regex="TX", str="AZ")`{{execute}}
+
 However, there is a special set of characters (called **metacharacters**) that have special functionality tied to them. These characters include the following: 
 
 `[]\^$.|?*+()`

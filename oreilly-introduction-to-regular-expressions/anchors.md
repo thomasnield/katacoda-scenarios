@@ -1,66 +1,54 @@
 
-For some of the examples here, we are going to use another regular expression function called `regex_findall(regex,str)`. Instead of simply returning a full match, it will return all partial matches that are found in a string. This is helpful for searching longer pieces of texts and documents.  
+For some of the examples here, we are going to use another regular expression function called `regex_findall(regex,file)`. Instead of simply returning a full match, it will return all partial matches that are found in a text file. 
 
-For example, we can look for all sequences of 3 alphabetic characters in a longer piece of text: 
+For example, say we have a `flights.txt` file with the following contents:
 
 ```
-regex_findall(regex="[A-Z][A-Z][A-Z]", str="""
 AS ABQ DAL 12:35 13:45 180
 NK PHX HOU 14:15 16:45 190
 AA MDW JFK 12:45 14:35 180
-""")
-```{{execute}}
+```
 
+We can look for all sequences of 3 alphabetic characters that exist in this text file. 
+
+`regex_findall(regex='[A-Z][A-Z][A-Z]', file='flights.txt')`{{execute}}
+
+Pretty cool, right? This can come in handy when using text editors and IDE's to quickly search-and-replace code and documents. 
 
 For the curious, this function was implemented in Python like this: 
 
 ```python
 import re
+from pathlib import Path
 
-def regex_findall(regex, str):
-    return re.findall(regex, str, re.MULTILINE)
+def regex_findall(regex, file):
+    return re.findall(regex,  Path(file).read_text(), re.MULTILINE)
 ```
 
 ## Line Anchors
 
-Sometimes you will want to qualify the start `^` and end `$` of a line. This can be handy if you are searching a document and only want to identify text patterns that occur at the start of a line. You can use this regular expression to match all numbers that start a line in a document as shown here: 
+For the following examples, we are going to use another text file called `recipes.txt` with the following contents: 
 
 ```
-regex_findall(regex="^[0-9]", str="""
 French Macaroons (24 servings)
 
 6 egg whites
 1 cup white sugar
 2 cup of powdered sugar
-2 cup of almond flour 
+2 cup of almond flour
 
 Beat eggs in bowl and then add sugar.
 
-Let sit for 2 minutes and continue... 
-""")
-```{{execute}}
+Let sit for 2 minutes and continue beating
+```
 
+Sometimes you will want to qualify the start `^` and end `$` of a line. This can be handy if you are searching a document and only want to identify text patterns that occur at the start of a line. You can use this regular expression to match all numbers that start a line in a document as shown here: 
 
-Pretty cool, right? This can come in handy when using text editors and IDE's to quickly search-and-replace code and documents. 
-
-![Figure 1. Using Atom Editor to search for numbers that start a line.](https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/image2-008a2916c3ad8f83b4c6acc098bd1376.png)
+`regex_findall(regex='^[0-9]', file='recipe.txt')`{{execute}}
 
 Conversly, you can use a `$` to qualify the end of the line. Here we look for letters that exist on the end of each line. 
 
-```
-regex_findall(regex="[A-Za-z]$", str="""
-French Macaroons (24 servings)
-
-6 egg whites
-1 cup white sugar
-2 cup of powdered sugar
-2 cup of almond flour 
-
-Beat eggs in bowl and then add sugar.
-
-Let sit for 2 minutes and continue
-""")
-```{{execute}}
+`regex_findall(regex="[A-Za-z]$", file="recipe.txt")`{{execute}}
 
 Note that any lines that ended in punctuation characters like `.` or `)` were not included. The letters on those lines were not the last character so they were not qualified. 
 
@@ -70,27 +58,14 @@ When we want to qualify the entire start and end of a string, and not just a lin
 
 To qualify an alphabetic character that ends a string, we can extract it like this. 
 
-```
-regex_findall(regex="[A-Za-z]\Z", str="""
-French Macaroons (24 servings)
-
-6 egg whites
-1 cup white sugar
-2 cup of powdered sugar
-2 cup of almond flour 
-
-Beat eggs in bowl and then add sugar.
-
-Let sit for 2 minutes and continue beating
-""")
-```{{execute}}
+`regex_findall(regex="[A-Za-z]\Z", file='recipe.txt'`{{execute}}
 
 As we can see, the letter "g" is returned. 
 
 
 ## Forcing a Full Match
 
-Depending on your environment, using both the start-of-line `^` and end-of-line `$` together can be helpful to force a full match and ignore partial ones. This is because qualifying the start `^` and end `$` of a line forces everything between them to be the only contents allowed in the string.
+Depending on your environment, using both the start-of-line `^` and end-of-line `$` together can be helpful to force a full match and ignore partial ones. This is because qualifying the start `^` and end `$` of a line forces everything between them to be the only contents allowed in the input.
 
 For example, we can force a full match of 2 digits and not qualify a partial match that exists in 3 or more digits.
 
