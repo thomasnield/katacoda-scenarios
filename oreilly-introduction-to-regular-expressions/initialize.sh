@@ -3,4 +3,10 @@
 # sudo apt-get -y install python3-pip
 
 python3
-from regex_helper import regex_match
+import re 
+def regex_match(regex, str):
+    result = re.fullmatch(pattern=regex, string=str)
+    if result:
+        return "Match"
+    else:
+        return "Doesn't match"
