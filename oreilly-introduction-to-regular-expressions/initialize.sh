@@ -51,7 +51,7 @@ def find(regex, str):
     if result:
         return result[0]
     else:
-		print("NO MATCH")
+		print('NO MATCH')
         return None
 
 
