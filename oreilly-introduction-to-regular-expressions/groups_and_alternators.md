@@ -14,9 +14,9 @@ If we wanted to identify phone numbers (with optional dashes `-`), but make the 
 
 Commonly used with grouping as well is the alternator `|` operator, which essentially functions as an `OR`. For example, I can specify I am looking for 3 digits followed by 3 alphabetic characters. But I can also accept the string "N/A" instead of 3 alphabetic characters. 
 
-`match(regex="[0-9]{3}(([A-Z]{3})|(N\/A))"), str="473ABQ")`{{execute}}
+`match(regex="[0-9]{3}(([A-Z]{3})|(N\/A))", str="473ABQ")`{{execute}}
 
-`match(regex="[0-9]{3}(([A-Z]{3})|(N\/A))"), str="473N/A")`{{execute}}
+`match(regex="[0-9]{3}(([A-Z]{3})|(N\/A))", str="473N/A")`{{execute}}
 
 A simpler example of grouping is just specifying a set of valid literal strings, like matching only "ALPHA", "BETA", or "GAMMA". 
 
