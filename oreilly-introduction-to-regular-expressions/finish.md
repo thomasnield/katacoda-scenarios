@@ -2,10 +2,10 @@ We have come to the end! It is important to remember that you often only need to
 
 Regular expressions may seem niche, but they can rise up heroically to the most unexpected tasks in your day-to-day work. Hopefully this Katacoda has helped you feel more comfortable with regular expressions and find them useful. They can assist in data munging, qualification, categorization, and parsing as well as document editing.
 
-For the Pythonistas, here are all the Python functions we used. 
 
-```python
-import re
+For the Pythonistas, here are all the Python functions we used:
+
+```import re
 
 def load_file(filepath):
     file = open(filepath, mode='r')
@@ -28,7 +28,7 @@ def find(regex, str):
     if result:
         return result[0]
     else:
-        return None
+        return "NO MATCH"
 
 
 def split(regex, str):
@@ -36,5 +36,4 @@ def split(regex, str):
 
 
 def findall(regex, file):
-    return re.findall(regex, load_file(file), re.MULTILINE)
-```
+    return re.findall(regex, load_file(file), re.MULTILINE)```

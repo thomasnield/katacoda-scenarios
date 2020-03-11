@@ -45,7 +45,7 @@ def find(regex, str):
     if result:
         return result[0]
     else:
-        return None
+        return "NO MATCH"
 
 
 def split(regex, str):
@@ -54,4 +54,5 @@ def split(regex, str):
 
 def findall(regex, file):
     return re.findall(regex, load_file(file), re.MULTILINE)
+	
 ```
