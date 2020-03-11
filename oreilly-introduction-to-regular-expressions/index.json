@@ -2,12 +2,16 @@
   "title": "Introduction to Regular Expressions",
   "description": "Learn Common Regular Expression Functionality Fast!",
   "difficulty": "beginner",
-  "time": "5 minutes",
+  "time": "40 minutes",
   "details": {
     "steps": [{
-      "title": "Literals and Character Ranges",
-      "text": "literals_and_character_ranges.md"
+      "title": "Literals",
+      "text": "literals.md"
 	},
+	{
+      "title": "Character Ranges",
+      "text": "character_ranges.md"
+	}
 	{
       "title": "Anchoring",
       "text": "anchors.md"
