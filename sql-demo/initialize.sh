@@ -9,4 +9,6 @@ unzip sqlite.zip
 
 cd sqlite-tools-linux-x86-3310100
 
-apt-get -qq update && apt-get install sqlite3-pcre && sqlite3 -column -header "thunderbird_manufacturing.db" && .load "/usr/lib/sqlite3/pcre.so"
+chmod +x sqlite3
+
+apt-get -qq update && apt-get install sqlite3-pcre && ./sqlite3 -column -header "thunderbird_manufacturing.db" && .load "/usr/lib/sqlite3/pcre.so"
