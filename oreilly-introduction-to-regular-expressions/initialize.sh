@@ -26,11 +26,13 @@ AA MDW JFK 12:45 14:35 180
 echo "
 import re
 
+
 def load_file(filepath):
     file = open(filepath, mode='r')
     text = file.read()
     file.close()
-    return text 
+    return text
+
 
 def regex_match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
@@ -39,8 +41,9 @@ def regex_match(regex, str):
     else:
         return 'NO MATCH'
 
+
 def regex_findall(regex, file):
-    return re.findall(regex,  load_file(file), re.MULTILINE)" >> regex_helper.py
+    return re.findall(regex, load_file(file), re.MULTILINE)" >> regex_helper.py
 		
 		
 python3
