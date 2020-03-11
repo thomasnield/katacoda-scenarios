@@ -5,4 +5,6 @@ apt-get install -y sqlite3
 
 sqlite3
 
+.headers on
+
 attach "thunderbird_manufacturing.db" as thunderbird_manufacturing;

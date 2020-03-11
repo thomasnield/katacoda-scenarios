@@ -5,14 +5,14 @@ Regular expressions may seem niche, but they can rise up heroically to the most 
 
 For the Pythonistas, here are all the Python functions we used:
 
-```import re
+```
+import re
 
 def load_file(filepath):
     file = open(filepath, mode='r')
     text = file.read()
     file.close()
     return text
-
 
 def match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
@@ -36,4 +36,5 @@ def split(regex, str):
 
 
 def findall(regex, file):
-    return re.findall(regex, load_file(file), re.MULTILINE)```
+    return re.findall(regex, load_file(file), re.MULTILINE)
+```
