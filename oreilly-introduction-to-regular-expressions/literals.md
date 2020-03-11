@@ -18,7 +18,7 @@ def regex_match(regex, str):
         return 'NO MATCH'
 ```
 
-In regular expressions, alphanumeric characters (letters A-Z and numbers 0-9) are treated as literals. This means they literally represent those characters and do not have any special functionality tied to them. For example, a regular expression of `TX` will only match a string `TX`. 
+In regular expressions, alphanumeric characters (letters A-Z and numbers 0-9) are treated as literals. This means they literally represent those characters and do not have any special functionality tied to them. For example, a regular expression of `TX` will only match a string "TX". 
 
 `regex_match(regex="TX", str="TX")`{{execute}}
 
@@ -26,10 +26,10 @@ However, there is a special set of characters (called **metacharacters**) that h
 
 `[]\^$.|?*+()`
 
-We will learn about these functionalities in the rest of these scenarios. If you want to use any of these characters as literals, you will need to escape them by preceding with a `\`. For example, to match a string of `$180` you will need a regular expression of `\$180`. 
+We will learn about these functionalities in the rest of these scenarios. If you want to use any of these characters as literals, you will need to escape them by preceding with a `\`. For example, to match a string of "$180" you will need a regular expression of `\$180`. 
 
 `regex_match(regex="\$180", str="$180")`{{execute}}
 
-Conversely, putting a `\` in front of an alphabetic character will yield a special character literal. For example, `\s` can be used to match any whitespace. 
+Conversely, putting a `\` in front of an alphabetic character can yield a special character literal. For example, `\s` can be used to match any whitespace. 
 
 `regex_match(regex="Lorem\sIpsum", str="Lorem Ipsum")`{{execute}}
