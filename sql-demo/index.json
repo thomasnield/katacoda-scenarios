@@ -7,7 +7,7 @@
     "steps": [{
       "title": "Literals",
       "text": "literals.md"
-	},
+	}
 	],
     "intro": {
       "text": "intro.md",
