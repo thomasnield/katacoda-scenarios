@@ -26,7 +26,7 @@ You can also express a minimum and maximum number of allowable repetitions. `[A-
 
 `match(regex="[A-Z]{2,3}", str="ARIZONA")`{{execute}}
 
-Leaving the second argument empty and having a comma still present will result in an infinite maximum, and therefore specify a minimum. Below, we have a regex that will match on a minimum of two alphanumeric characters.
+Leaving the second argument empty and having a comma still present will result in an infinite maximum, and therefore specify only a minimum. Below, we have a regex that will match on a minimum of two alphanumeric characters.
 
 `match(regex="[A-Za-z0-9]{2,}", str="YZ1")`{{execute}}
 
