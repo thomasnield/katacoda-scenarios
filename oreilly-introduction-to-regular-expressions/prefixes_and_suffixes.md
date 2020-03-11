@@ -2,9 +2,9 @@ Especially when you are scanning documents, it can be helpful to qualify somethi
 
 For instance, if I want to extract numbers that are preceded by uppercase letters, but I don’t want to include those letters, I can use a prefix like this:
 
-`find(regex="(?<=[A-Z]+)[0-9]", str="ALPHA12")`{{execute}}
+`find(regex="(?<=[A-Z])[0-9]+", str="ALPHA12")`{{execute}}
 
-`find(regex="(?<=[A-Z]+)[0-9]", str="167")`{{execute}}
+`find(regex="(?<=[A-Z])[0-9]+", str="167")`{{execute}}
 
 
 A suffix works similarly, but matches a tail without including that tail.
