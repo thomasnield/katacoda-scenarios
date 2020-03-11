@@ -15,3 +15,7 @@ A common operation you may see is `.*`, which allows 0 or more repetitions of an
 Note also it will match an empty string. 
 
 `match(regex="", str="Alpha")`{{execute}}
+
+One thing to note carefully is that when the `.` is inside a character range `[]`, it literally is treated as a dot character and does not function as a wildcard. 
+
+`match(regex="([0-9.]+", str="172.18.83.245")`{{execute}}
