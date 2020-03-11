@@ -18,8 +18,7 @@ def regex_findall(regex, str):
 		
 python3
 
-from regex_helper import regex_match
+from regex_helper import regex_match, regex_findall
 
 import os
 os.system('clear')
-print("Introduction to Regular Expressions")
