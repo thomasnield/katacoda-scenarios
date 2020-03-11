@@ -5,7 +5,8 @@ This environment has been set up to have a simple function called `regex_match(r
 
 The first argument `regex` is our regular expression, and the second argument `str` is the string we are matching against. The function will return either `MATCH` or `NO MATCH`. 
 
-> For the curious this is actually set up in a Python3 environment using the following implementation: 
+For the curious this is actually set up in a Python3 environment using the following implementation: 
+
 ```python
 import re
 
@@ -17,7 +18,7 @@ def regex_match(regex, str):
         return 'NO MATCH'
 ```
 
-### Literals
+## Literals
 
 In regular expressions, alphanumeric characters (letters A-Z and numbers 0-9) are treated as literals. This means they literally represent those characters and do not have any special functionality tied to them. For example, a regular expression of `TX` will only match a string `TX`. 
 
@@ -36,7 +37,7 @@ Conversely, putting a `\` in front of an alphabetic character will yield a speci
 `regex_match(regex="Lorem\sIpsum", str="Lorem Ipsum")`{{execute}}
 
 
-### Character Ranges 
+## Character Ranges 
 
 For a given position in a string, we can qualify a range of valid characters. To match a string containing a character of 0, 1, or 3 followed by an F, X, or B, we can declare a regular expression with character ranges inside square brackets [].
 
