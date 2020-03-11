@@ -19,10 +19,15 @@ For the curious, this function was implemented in Python like this:
 
 ```python
 import re
-from pathlib import Path
+
+def load_file(filepath):
+    file = open(filepath, mode='r')
+    text = file.read()
+    file.close()
+    return text
 
 def regex_findall(regex, file):
-    return re.findall(regex,  Path(file).read_text(), re.MULTILINE)
+    return re.findall(regex, load_file(file), re.MULTILINE)
 ```
 
 ## Line Anchors
@@ -33,9 +38,9 @@ For the following examples, we are going to use another text file called `recipe
 French Macaroons (24 servings)
 
 6 egg whites
-1 cup white sugar
-2 cup of powdered sugar
-2 cup of almond flour
+1 cups white sugar
+2 cups of powdered sugar
+2 cups of almond flour
 
 Beat eggs in bowl and then add sugar.
 
@@ -51,16 +56,6 @@ Conversly, you can use a `$` to qualify the end of the line. Here we look for le
 `regex_findall(regex="[A-Za-z]$", file="recipe.txt")`{{execute}}
 
 Note that any lines that ended in punctuation characters like `.` or `)` were not included. The letters on those lines were not the last character so they were not qualified. 
-
-## String Anchors
-
-When we want to qualify the entire start and end of a string, and not just a line, we can use `\A` and `\Z` respectively. If our text is only one line, a line start `^` and end `$` should sufficiently achieve the same effect. But as we saw in multi-line texts, they will qualify each and every line. 
-
-To qualify an alphabetic character that ends a string, we can extract it like this. 
-
-`regex_findall(regex="[A-Za-z]\Z", file='recipe.txt'`{{execute}}
-
-As we can see, the letter "g" is returned. 
 
 
 ## Forcing a Full Match
