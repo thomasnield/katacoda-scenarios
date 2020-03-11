@@ -7,8 +7,8 @@ curl -L https://sqlite.org/2020/sqlite-tools-linux-x86-3310100.zip >> sqlite.zip
 
 unzip sqlite.zip 
 
-cd sqlite-tools-linux-x86-3310100
+sudo cp -v sqlite-tools-linux-x86-3210000/sqlite3 /usr/bin/
 
-chmod +x sqlite3
+apt-get -qq update && apt-get -qq --yes --force-yes install sqlite3 && apt-get install sqlite3-pcre && ./sqlite3 -column -header "thunderbird_manufacturing.db" && .load "/usr/lib/sqlite3/pcre.so"
 
-apt-get -qq update && apt-get install sqlite3-pcre && ./sqlite3 -column -header "thunderbird_manufacturing.db" && .load "/usr/lib/sqlite3/pcre.so"
+cp -v sqlite-tools-linux-x86-3310100/sqlite3 /usr/bin/
