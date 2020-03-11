@@ -10,7 +10,7 @@ def regex_match(regex, str):
     if result:
         return 'MATCH'
     else:
-        return 'NO MATCH'" >> regex_helper.python
+        return 'NO MATCH'" >> regex_helper.py
 		
 		
 python3
