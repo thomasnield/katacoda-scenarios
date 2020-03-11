@@ -19,3 +19,4 @@ from regex_helper import regex_match
 
 import os
 os.system('clear')
+print("Introduction to Regular Expressions\r\n")
