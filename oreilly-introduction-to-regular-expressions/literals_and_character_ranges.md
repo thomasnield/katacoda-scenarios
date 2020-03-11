@@ -22,7 +22,10 @@ def regex_match(regex, str):
     if result:
         return "MATCH"
     else:
-        return "NO MATCH"\r```{{execute}}
+        return "NO MATCH"
+		
+
+```{{execute}}
 
  Let's test our first regular expression.
 
