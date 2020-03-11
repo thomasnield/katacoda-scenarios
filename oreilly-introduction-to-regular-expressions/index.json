@@ -15,7 +15,16 @@
 	{
       "title": "Anchoring",
       "text": "anchors.md"
-	}],
+	},
+	{
+      "title": "Quantifiers",
+      "text": "quantifiers.md"
+	},
+	{
+      "title": "Shorthand Quantifiers",
+      "text": "quantifiers_shorthand.md"
+	}
+	],
     "intro": {
       "text": "intro.md",
       "credits": "",
