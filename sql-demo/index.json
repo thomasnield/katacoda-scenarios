@@ -19,7 +19,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
+    "uilayout": "terminal",
     "uimessage1": "\u001b[32mIntroduction "
   },
   "backend": {
