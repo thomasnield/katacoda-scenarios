@@ -5,8 +5,5 @@ curl -L https://www.sqlite.org/2020/sqlite-amalgamation-3310100.zip >> sqlite.zi
 
 unzip sqlite.zip 
 
-# 
-
-sqlite-amalgamation-3310100
-apt-get -qq update && apt-get -qq --yes --force-yes install make && cd sqlite-amalgamation-3310100 && sh configure && make sqlite3.c && apt-get install sqlite3-pcre && ./sqlite3 -column -header "thunderbird_manufacturing.db" && .load "/usr/lib/sqlite3/pcre.so"
+apt-get -qq update && apt-get -qq --yes --force-yes install gcc && cd sqlite-amalgamation-3310100 && sh configure && make sqlite3.c && apt-get install sqlite3-pcre && ./sqlite3 -column -header "thunderbird_manufacturing.db" && .load "/usr/lib/sqlite3/pcre.so"
 
