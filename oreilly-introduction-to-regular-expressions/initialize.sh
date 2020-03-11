@@ -5,7 +5,6 @@
 
 echo "
 import re
-import os
 def regex_match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
     if result:
@@ -18,4 +17,5 @@ python3
 
 from regex_helper import regex_match
 
+import os
 os.system('clear')
