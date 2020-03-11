@@ -7,6 +7,6 @@ import re
 def regex_match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
     if result:
-        return "Match"
+        return "MATCH"
     else:
-        return "Doesn't match"
+        return "NO MATCH"
