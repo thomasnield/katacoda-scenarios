@@ -3,4 +3,4 @@
 # sudo apt-get -y install python3-pip
 
 python3
-regex_helper.py
+from regex_helper import regex_match
