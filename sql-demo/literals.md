@@ -25,4 +25,4 @@ FROM CUSTOMER_ORDER INNER JOIN total_ordered
 
 ON CUSTOMER_ORDER.CUSTOMER_ID = total_ordered.CUSTOMER_ID
 AND CUSTOMER_ORDER.PRODUCT_ID = total_ordered.PRODUCT_ID
-```
+```{{execute}}
