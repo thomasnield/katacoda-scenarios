@@ -9,4 +9,4 @@ def regex_match(regex, str):
     if result:
         return "MATCH"
     else:
-        return "NO MATCH"
+        return "NO MATCH"\r
