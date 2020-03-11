@@ -3,7 +3,9 @@
 # sudo apt-get -y install python3-pip
 
 
-echo "import re
+echo "
+import re
+import os
 def regex_match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
     if result:
@@ -15,3 +17,5 @@ def regex_match(regex, str):
 python3
 
 from regex_helper import regex_match
+
+os.system('clear')

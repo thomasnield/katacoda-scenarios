@@ -11,7 +11,7 @@
     "intro": {
       "text": "intro.md",
       "credits": "",
-	  "courseData" : "initialize.sh"
+	  "code" : "initialize.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -20,7 +20,7 @@
   },
   "environment": {
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mIntroduction to Regular Expressions"
+    "uimessage1": "\u001b[32mIntroduction "
   },
   "backend": {
     "imageid": "bash"
