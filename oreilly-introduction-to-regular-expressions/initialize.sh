@@ -13,7 +13,7 @@ def regex_match(regex, str):
         return 'NO MATCH'
 
 def regex_findall(regex, str):
-    return re.findall(regex, str)" >> regex_helper.py
+    return re.findall(regex, str, re.MULTILINE)" >> regex_helper.py
 		
 		
 python3

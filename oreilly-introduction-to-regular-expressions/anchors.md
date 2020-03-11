@@ -11,7 +11,17 @@ AA MDW JFK 12:45 14:35 180
 """)
 ```{{execute}}
 
-###Line Anchors
+
+For the curious, this function was implemented in Python like this: 
+
+```python
+import re
+
+def regex_findall(regex, str):
+    return re.findall(regex, str, re.MULTILINE)
+```
+
+## Line Anchors
 
 Sometimes you will want to qualify the start `^` and end `$` of a line. This can be handy if you are searching a document and only want to identify text patterns that occur at the start of a line. You can use this regular expression to match all numbers that start a line in a document as shown here: 
 
@@ -54,7 +64,7 @@ Let sit for 2 minutes and continue
 
 Note that any lines that ended in punctuation characters like `.` or `)` were not included. The letters on those lines were not the last character so they were not qualified. 
 
-###String Anchors
+## String Anchors
 
 When we want to qualify the entire start and end of a string, and not just a line, we can use `\A` and `\Z` respectively. If our text is only one line, a line start `^` and end `$` should sufficiently achieve the same effect. But as we saw in multi-line texts, they will qualify each and every line. 
 
@@ -78,9 +88,9 @@ Let sit for 2 minutes and continue beating
 As we can see, the letter "g" is returned. 
 
 
-###Forcing a Full Match
+## Forcing a Full Match
 
-Depending on your environment, using both the start-of-line `^` and end-of-line `$` together can be helpful to force a full match and ignore partial ones. This is because qualifying the start `^` and end `$` of a line forces everything between them to be the only contents allowed in the input.
+Depending on your environment, using both the start-of-line `^` and end-of-line `$` together can be helpful to force a full match and ignore partial ones. This is because qualifying the start `^` and end `$` of a line forces everything between them to be the only contents allowed in the string.
 
 For example, we can force a full match of 2 digits and not qualify a partial match that exists in 3 or more digits.
 
