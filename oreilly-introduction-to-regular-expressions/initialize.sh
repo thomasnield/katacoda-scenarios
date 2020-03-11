@@ -3,7 +3,7 @@
 # sudo apt-get -y install python3-pip
 
 
-"import re
+echo "import re
 
 def regex_match(regex, str):
     result = re.fullmatch(pattern=regex, string=str)
