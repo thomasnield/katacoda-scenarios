@@ -1,8 +1,8 @@
 
 
 
-curl -L "https://www.sqlite.org/2020/sqlite-amalgamation-3310100.zip" >> sqlite.zip && unzip sqlite.zip 
-
+curl -L "https://www.sqlite.org/2020/sqlite-amalgamation-3310100.zip" >> sqlite.zip && 
+unzip sqlite.zip &&
 apt-get -qq update && 
 apt-get -qq --yes --force-yes install gcc && 
 cd sqlite-amalgamation-3310100 && 
