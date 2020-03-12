@@ -26,14 +26,12 @@ FROM CUSTOMER_ORDER INNER JOIN total_ordered
 ON CUSTOMER_ORDER.CUSTOMER_ID = total_ordered.CUSTOMER_ID
 AND CUSTOMER_ORDER.PRODUCT_ID = total_ordered.PRODUCT_ID
 
-LIMIT 20;
-```{{execute}}
+LIMIT 20;```{{execute}}
 
 
 Run a recursive query: 
 
-```
-WITH RECURSIVE repeat_helper(x) AS (
+```WITH RECURSIVE repeat_helper(x) AS (
     SELECT 1
         UNION ALL
     SELECT x + 1 
@@ -48,8 +46,7 @@ FROM EMPLOYEE_AIR_TRAVEL CROSS JOIN repeat_helper
 ON repeat_helper.x <= 2
 GROUP BY AIRPORT
 
-LIMIT 20;
-```{{execute}}
+LIMIT 20;```{{execute}}
 
 
 Run a windowing function: 
@@ -69,5 +66,4 @@ FROM CUSTOMER_ORDER
 WHERE ORDER_DATE BETWEEN '2017-03-01' AND '2017-03-31'
 
 ORDER BY CUSTOMER_ORDER_ID
-LIMIT 20;
-```{{execute}}
+LIMIT 20;```{{execute}}
