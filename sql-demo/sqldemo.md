@@ -31,7 +31,8 @@ LIMIT 20;```{{execute}}
 
 Run a recursive query: 
 
-```WITH RECURSIVE repeat_helper(x) AS (
+```
+WITH RECURSIVE repeat_helper(x) AS (
     SELECT 1
         UNION ALL
     SELECT x + 1 
