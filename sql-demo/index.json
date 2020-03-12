@@ -5,8 +5,8 @@
   "time": "40 minutes",
   "details": {
     "steps": [{
-      "title": "Literals",
-      "text": "literals.md"
+      "title": "SQL Demonstration",
+      "text": "sqldemo.md"
 	}
 	],
     "intro": {
