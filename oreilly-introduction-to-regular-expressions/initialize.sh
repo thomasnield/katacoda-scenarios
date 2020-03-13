@@ -51,14 +51,14 @@ def find(regex, str):
     if result:
         return result[0]
     else:
-		print('NO MATCH')
+        print('NO MATCH')
         return None
 
 
 def findall(regex, file):
     return re.findall(regex, load_file(file), re.MULTILINE)" >> regex_helper.py
-		
-		
+
+
 python3
 
 from regex_helper import match, find, findall
