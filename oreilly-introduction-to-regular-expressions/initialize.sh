@@ -45,6 +45,7 @@ def match(regex, str):
 def split(regex, str):
     return re.split(regex, str)
 
+
 def find(regex, str):
     result = re.findall(regex, str)
 
