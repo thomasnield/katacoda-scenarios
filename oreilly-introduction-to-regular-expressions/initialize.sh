@@ -62,7 +62,7 @@ def findall(regex, file):
 
 python3
 
-from regex_helper import match, find, findall
+from regex_helper import match, find, findall, split
 
 import os
 os.system('clear')
