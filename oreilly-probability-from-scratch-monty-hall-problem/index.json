@@ -15,6 +15,10 @@
 		{
 			"title": "Using Bayes Theorem",
 			"text": "bayes_theorem.md"
+		},
+		{
+			"title": "Still confused? Hyperbolize!",
+			"text": "hyperbolized.md"
 		}
 		],
 		"intro": {
