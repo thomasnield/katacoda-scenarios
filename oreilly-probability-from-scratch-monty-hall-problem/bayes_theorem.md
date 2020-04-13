@@ -20,7 +20,7 @@ Let's plug these values into Bayes Theorem, and copy this code to the editor:
 
 <pre class="file" data-filename="monty_hall.py" data-target="replace">
 
-p_prize2 = .33          # probability of prize in door 2
+p_prize2 = 1.0 / 3.0    # probability of prize in door 2
 p_left2_prize2 = 1.0    # probability of door 2 left given prize in door 2
 p_left2 = .5            # probability of door 2 being chosen
 
@@ -42,7 +42,7 @@ Conversely, if we stay with **Door 1** and stick with our theory it holds the pr
 <pre class="file" data-filename="monty_hall.py" data-target="replace">
 from random import randint
 
-p_prize1 = .33          # probability of prize in door 1
+p_prize1 = 1.0 / 3.0    # probability of prize in door 1
 p_left2_prize1 = .5     # probability of door 2 left given prize in door 1
 p_left2 = .5            # probability of door 2 being left
 

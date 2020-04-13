@@ -1,4 +1,4 @@
-Still confused? Hyperbolize and it may make sense. Imagine you had 1000 doors, and you chose **Door 19** with terrible odds (1/1000) it has the prize. Then every other door is opened besides **Door 77**. Are you inclined to switch now? 
+Imagine you had 1000 doors, and you chose **Door 19** with terrible odds (1/1000) it has the prize. Then every other door is opened besides **Door 77**. Are you inclined to switch now? 
 
 Hopefully it feels intuitive to switch, and whether it is 3 doors or 1000 doors the transfer of probability is the same. But let's plug into Bayes theorem just to be sure. 
 
