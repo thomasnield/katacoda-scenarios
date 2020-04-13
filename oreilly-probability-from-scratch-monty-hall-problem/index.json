@@ -15,18 +15,13 @@
 		},
 		"finish": {
 			"text": "finish.md"
-		},
-		"assets": {
-			"host01": [{
-				"file": "monty_hall_interactive2.py",
-				"target": "~/"
-			}]
 		}
 	},
 	"environment": {
 		"uilayout": "editor-terminal",
 		"uimessage1": "\u001b[32mIntroduction "
 	},
+	"files" : ["monty_hall_interactive2.py","monty_hall_interactive1.py"],
 	"backend": {
 		"imageid": "bash"
 	}
