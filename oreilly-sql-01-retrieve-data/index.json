@@ -1,11 +1,11 @@
 {
-  "title": "SQL Demo",
-  "description": "Testing SQLite capabilities on Katacoda",
+  "title": "Retrieve Data with SELECT",
+  "description": "Retrieve and transform columns in a table using SELECT operator",
   "difficulty": "beginner",
-  "time": "40 minutes",
+  "time": "6 minutes",
   "details": {
     "steps": [{
-      "title": "SQL Demonstration",
+      "title": "Retrieving Columns",
       "text": "sqldemo.md"
 	}
 	],
