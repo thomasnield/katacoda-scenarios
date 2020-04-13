@@ -1,0 +1,28 @@
+{
+  "title": "SQL Demo",
+  "description": "Testing SQLite capabilities on Katacoda",
+  "difficulty": "beginner",
+  "time": "40 minutes",
+  "details": {
+    "steps": [{
+      "title": "SQL Demonstration",
+      "text": "sqldemo.md"
+	}
+	],
+    "intro": {
+      "text": "intro.md",
+      "credits": "",
+	  "code" : "initialize.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mIntroduction "
+  },
+  "backend": {
+    "imageid": "bash"
+  }
+}
