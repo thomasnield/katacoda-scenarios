@@ -16,3 +16,28 @@ FROM PRODUCT;
 We can then run the SQL text file with the following command: 
 
 `.read my_query.sql`{{execute}}
+
+We can also rename fields within our query using the `AS` keyword (known as an "alias"). Below we rename the `PRICE` field as `UNTAXED_PRICE`. Again this does not modify the underlying `CUSTOMER` table, but transforms the retrieved data in our query before it is returned. 
+
+<pre class="file" data-filename="my_query.sql" data-target="replace">
+SELECT PRODUCT_ID,
+DESCRIPTION,
+PRICE AS UNTAXED_PRICE,
+PRICE * 1.07 AS TAXED_PRICE
+FROM PRODUCT;
+</pre>
+
+`.read my_query.sql`{{execute}}
+
+There are a handful of math operators that SQL supports, and these should be supported across all platforms. 
+
+| Symbol | Description            |
+|--------|------------------------|
+| +      | Adds two numbers                          |
+| -      | Subtracts two numbers                     |
+| *      | Multiplies two numbers                    |
+| /      | Divides two numbers                       |
+| %      | Divides two numbers, but returns remainder|
+| ( )    | Groups up an expression so it is evaluated first|
+
+However, if you need to do other tasks like exponents and trigonometry you will need to use functions. 
