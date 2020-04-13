@@ -1,9 +1,20 @@
 
 The Monty Hall Problem is a great way to appreciate how nuanced probability can be. When it first received mainstream attention in the 1990's, it baffled even mathematicians and statistics experts. 
 
-Here is the brain teaser: 
+**Here is the brain teaser:**
 
-You are on a game show standing in front of 3 closed doors, and behind one of them is a prize. You choose a door but here comes the twist. The game show host now opens another door, and offers you the opportunity to switch to the other unopened door. 
+You are on a game show standing in front of 3 closed doors, and behind one of them is a prize. 
+
+```
+ ____   ____   ____
+|    | |    | |    |
+|   o| |   o| |   o|
+|    | |    | |    |
+|____| |____| |____|
+
+```
+
+You choose a door, and rightfuly believe you have a 1/3 (33.33% chance) of winning the prize. But here comes the twist. The game show host now opens another door, and offers you the opportunity to switch to the other unopened door. 
 
 Do you switch? You can play the game using this Python code. First, copy it to the editor: 
 
@@ -33,6 +44,8 @@ After copying the file, run it with Python3 and play a game:
 python3 monty_hall.py
 ```{{execute}}
 
-Feel free to play a few games by running the above command. Do you think switching doors makes a difference in your probability of winning? 
+Feel free to play a few games by running the above command. Does switching doors make a difference in our odds of winning the prize? 
+
+Many people believe that since two doors are left (the one you chose and the one you can switch to), the probability is split evenly 50%/50%. But how can we give credibility to this theory? 
 
 When you are ready to continue, we will explore this question further. 
