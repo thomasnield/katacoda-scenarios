@@ -1,3 +1,3 @@
-# Probability and Permutations
+# Monty Hall Problem
 
-Most people have some notion of what probability is, as people have to make decisions with uncertainty every day of their lives. However, there is more than one way to reason about probability and how it is composed. In this scenario, we will cover some of these basic building blocks and set a foundation for more advanced concepts down the road. 
+The Monty Hall Problem is one of the most famous problems in probability and mathematics. Since its inception in the 1970's, it has fooled even the greatest mathematical experts and shows how subtle probability can be. This will be a great way to appreciate the nuances of probability and why we cannot always trust our intuitions. 

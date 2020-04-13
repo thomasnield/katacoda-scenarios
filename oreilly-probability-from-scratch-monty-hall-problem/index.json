@@ -7,7 +7,12 @@
 		"steps": [{
 			"title": "Problem Setup",
 			"text": "problem_setup.md"
-		}],
+		},
+		{
+			"title": "Simulating with Monte Carlo",
+			"text": "monte_carlo_simulation.md"
+		}
+		],
 		"intro": {
 			"text": "intro.md",
 			"credits": "",
