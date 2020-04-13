@@ -11,6 +11,10 @@
 		{
 			"title": "Simulating with Monte Carlo",
 			"text": "monte_carlo_simulation.md"
+		},
+		{
+			"title": "Using Bayes Theorem",
+			"text": "bayes_theorem.md"
 		}
 		],
 		"intro": {
