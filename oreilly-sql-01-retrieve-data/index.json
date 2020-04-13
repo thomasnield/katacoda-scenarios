@@ -22,6 +22,8 @@
 	"uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mIntroduction "
   },
+  "files" : ["my_query.sql"],
+
   "backend": {
     "imageid": "bash"
   }
