@@ -20,4 +20,5 @@ if chosen_door == door_with_prize:
     print("You win a prize!")
 else:
     print("Sorry, no prize")
+
 ```{{execute}}
