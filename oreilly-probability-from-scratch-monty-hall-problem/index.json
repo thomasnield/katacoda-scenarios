@@ -16,7 +16,21 @@
     },
     "finish": {
       "text": "finish.md"
-    }
+    },
+	"assets": {
+    "client": [
+      {
+        "file": "monty_hall_interactive1.py",
+        "target": "~/"
+      }
+    ],
+    "host01": [
+      {
+        "file": "monty_hall_interactive2.py",
+        "target": "~/"
+      }
+    ]
+  }
   },
   "environment": {
     "uilayout": "editor-terminal",
@@ -24,5 +38,6 @@
   },
   "backend": {
     "imageid": "bash"
-  }
+  },
+  
 }
