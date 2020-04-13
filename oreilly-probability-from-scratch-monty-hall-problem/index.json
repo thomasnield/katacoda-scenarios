@@ -1,43 +1,37 @@
 {
-  "title": "Monty Hall Problem",
-  "description": "Understand the nuances of probability with the game show puzzle",
-  "difficulty": "beginner",
-  "time": "7 minutes",
-  "details": {
-    "steps": [{
-      "title": "Problem Setup",
-      "text": "problem_setup.md"
+	"title": "Monty Hall Problem",
+	"description": "Understand the nuances of probability with the game show puzzle",
+	"difficulty": "beginner",
+	"time": "7 minutes",
+	"details": {
+		"steps": [{
+			"title": "Problem Setup",
+			"text": "problem_setup.md"
+		}],
+		"intro": {
+			"text": "intro.md",
+			"credits": "",
+			"code": "initialize.sh"
+		},
+		"finish": {
+			"text": "finish.md"
+		},
+		"assets": {
+			"client": [{
+				"file": "monty_hall_interactive1.py",
+				"target": "~/"
+			}],
+			"host01": [{
+				"file": "monty_hall_interactive2.py",
+				"target": "~/"
+			}]
+		}
+	},
+	"environment": {
+		"uilayout": "editor-terminal",
+		"uimessage1": "\u001b[32mIntroduction "
+	},
+	"backend": {
+		"imageid": "bash"
 	}
-	],
-    "intro": {
-      "text": "intro.md",
-      "credits": "",
-	  "code" : "initialize.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-	"assets": {
-    "client": [
-      {
-        "file": "monty_hall_interactive1.py",
-        "target": "~/"
-      }
-    ],
-    "host01": [
-      {
-        "file": "monty_hall_interactive2.py",
-        "target": "~/"
-      }
-    ]
-  }
-  },
-  "environment": {
-    "uilayout": "editor-terminal",
-    "uimessage1": "\u001b[32mIntroduction "
-  },
-  "backend": {
-    "imageid": "bash"
-  },
-  
 }
