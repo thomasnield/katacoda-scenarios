@@ -1,4 +1,4 @@
-If you ran several games perhaps you can keep track of your wins and losses, and try both staying and switching. Rather than having to do this manually for a tedious number of repetitions, why not have the computer do it? 
+We want to validate our intuition that switching does not make a difference in winning. If you ran several games perhaps you can keep track of your wins and losses, and alternate between staying and switching. Rather than having to do this manually for a tedious number of repetitions, why not have the computer do it? 
 
 We can perform what is called a *monte carlo simulation*, where we simulate an event using random selection. We can have the computer do 10,000 Monty Hall games and have it randomly choose a door with a prize, as well as select a door. Afterwards, we can aggregate the results and see how often staying versus switching will result in a win. 
 
