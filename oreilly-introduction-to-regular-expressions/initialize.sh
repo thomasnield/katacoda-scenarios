@@ -45,23 +45,24 @@ def match(regex, str):
 def split(regex, str):
     return re.split(regex, str)
 
+
 def find(regex, str):
     result = re.findall(regex, str)
 
     if result:
         return result[0]
     else:
-		print('NO MATCH')
+        print('NO MATCH')
         return None
 
 
 def findall(regex, file):
     return re.findall(regex, load_file(file), re.MULTILINE)" >> regex_helper.py
-		
-		
+
+
 python3
 
-from regex_helper import match, find, findall
+from regex_helper import match, find, findall, split
 
 import os
 os.system('clear')
