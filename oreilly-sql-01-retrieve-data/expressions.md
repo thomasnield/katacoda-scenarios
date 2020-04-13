@@ -1,9 +1,7 @@
 
-The `SELECT` operation can do a lot more than simply retrieve data. We can also transform data in useful ways before the results are returned. Note this does not modify the table, but rather tansforms the results with calculations before being sent back.
+The `SELECT` operation can do a lot more than simply retrieve data. We can also transform data in useful ways before the results are returned. Note this does not modify the table, but rather tansforms the results before they come back. 
 
 For example, I can calculate a `TAXED_PRICE` field on-the-fly simply by expressing `PRICE * 1.07` as a selected field. I give it a name `TAXED_PRICE` using the `AS` keyword. 
-
-We achieve this below. Note that the SQL is multiple lines, which can be tedious to write on the shell. So let's copy it to the editor above in a text file called `my_query.sql`. 
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT PRODUCT_ID,
@@ -13,7 +11,8 @@ PRICE * 1.07 AS TAXED_PRICE
 FROM PRODUCT;
 </pre>
 
-We can then run the SQL text file with the following command: 
+
+ Note that the SQL above is multiple lines, which can be tedious to write into the shell. So let's copy it to the editor above in a text file called `my_query.sql`. We can then run it with the following command: 
 
 `.read my_query.sql`{{execute}}
 
