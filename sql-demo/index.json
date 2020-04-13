@@ -1,12 +1,12 @@
 {
-  "title": "SQL Demo",
-  "description": "Testing SQLite capabilities on Katacoda",
+  "title": "Retrieve Data with SELECT",
+  "description": "Retrieve and transform columns in a table using SELECT operator",
   "difficulty": "beginner",
-  "time": "40 minutes",
+  "time": "6 minutes",
   "details": {
     "steps": [{
-      "title": "SQL Demonstration",
-      "text": "sqldemo.md"
+      "title": "Retrieving Columns",
+      "text": "retrieving_records.md"
 	}
 	],
     "intro": {
@@ -19,9 +19,11 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
+	"uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mIntroduction "
   },
+  "files" : ["my_query.sql"],
+
   "backend": {
     "imageid": "bash"
   }

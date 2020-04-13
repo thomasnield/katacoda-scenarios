@@ -5,7 +5,8 @@ Run a simple SELECT:
 
 Run a common table expression: 
 
-```
+<pre class="file" data-filename="my_query.sql" data-target="replace">
+
 WITH total_ordered AS (
     SELECT CUSTOMER_ID,
     PRODUCT_ID,
@@ -26,12 +27,14 @@ FROM CUSTOMER_ORDER INNER JOIN total_ordered
 ON CUSTOMER_ORDER.CUSTOMER_ID = total_ordered.CUSTOMER_ID
 AND CUSTOMER_ORDER.PRODUCT_ID = total_ordered.PRODUCT_ID
 
-LIMIT 20;```{{execute}}
+LIMIT 20;
+</pre>
 
 
 Run a recursive query: 
 
-```
+<pre class="file" data-filename="my_query.sql" data-target="replace">
+
 WITH RECURSIVE repeat_helper(x) AS (
     SELECT 1
         UNION ALL
@@ -47,12 +50,14 @@ FROM EMPLOYEE_AIR_TRAVEL CROSS JOIN repeat_helper
 ON repeat_helper.x <= 2
 GROUP BY AIRPORT
 
-LIMIT 20;```{{execute}}
+LIMIT 20;
+</pre>
 
 
 Run a windowing function: 
 
-```
+<pre class="file" data-filename="my_query.sql" data-target="replace">
+
 SELECT CUSTOMER_ORDER_ID,
 CUSTOMER_ID,
 ORDER_DATE,
@@ -67,4 +72,5 @@ FROM CUSTOMER_ORDER
 WHERE ORDER_DATE BETWEEN '2017-03-01' AND '2017-03-31'
 
 ORDER BY CUSTOMER_ORDER_ID
-LIMIT 20;```{{execute}}
+LIMIT 20;
+</pre>

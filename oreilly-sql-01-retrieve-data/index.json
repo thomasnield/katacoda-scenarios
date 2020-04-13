@@ -7,6 +7,10 @@
     "steps": [{
       "title": "Retrieving Columns",
       "text": "retrieving_records.md"
+	},
+	{
+      "title": "Expressions",
+      "text": "expressions.md"
 	}
 	],
     "intro": {
@@ -22,7 +26,7 @@
 	"uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mIntroduction "
   },
-  "files" : ["query"],
+  "files" : ["my_query.sql"],
 
   "backend": {
     "imageid": "bash"

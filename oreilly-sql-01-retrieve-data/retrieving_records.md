@@ -1,76 +1,17 @@
 
-Run a simple SELECT: 
+The most fundamental task in SQL (structured query language) is the `SELECT` operator which allows us to retrieve data. We are going to use a `rexon_metals` database which has 3 tables: `CUSTOMER`, `CUSTOMER_ORDER`, and `PRODUCT`. 
+
+Hopefully a table is a familiar concept. It has rows and columns much like a spreadsheet, but is much more structured to store data. To view all columns and all records from the `CUSTOMER` table, execute the folling SQL command. 
 
 `SELECT * FROM CUSTOMER;`{{execute}}
 
-Run a common table expression: 
+Notice that the `SELECT` allows us to retrieve one or more columns `FROM` the `CUSTOMER` table, and the `*` simply specifies to retrieve all columns.
 
-<pre class="file" data-filename="my_query.sql" data-target="replace">
+When we are trying to sample data from a table, we can use the `LIMIT` command to only sample a few rows. Below we can limit the returned results to just 2 records: 
 
-WITH total_ordered AS (
-    SELECT CUSTOMER_ID,
-    PRODUCT_ID,
-    SUM(QUANTITY) AS sum_qty
-    FROM CUSTOMER_ORDER
-    GROUP BY 1, 2
-) 
-
-SELECT CUSTOMER_ORDER_ID,
-CUSTOMER_ORDER.CUSTOMER_ID,
-ORDER_DATE,
-CUSTOMER_ORDER.PRODUCT_ID,
-QUANTITY,
-sum_qty
-
-FROM CUSTOMER_ORDER INNER JOIN total_ordered
-
-ON CUSTOMER_ORDER.CUSTOMER_ID = total_ordered.CUSTOMER_ID
-AND CUSTOMER_ORDER.PRODUCT_ID = total_ordered.PRODUCT_ID
-
-LIMIT 20;
-</pre>
+`SELECT * FROM CUSTOMER LIMIT 2;`{{execute}}
 
 
-Run a recursive query: 
+Note you can also retrieve specific columns, which not only helps us reduce our focus to columns of interest, but it can create less work in the queries as data is reduced. 
 
-<pre class="file" data-filename="my_query.sql" data-target="replace">
-
-WITH RECURSIVE repeat_helper(x) AS (
-    SELECT 1
-        UNION ALL
-    SELECT x + 1 
-    FROM repeat_helper
-    WHERE x < 1000
-)
-
-SELECT
-CASE WHEN repeat_helper.x == 1 THEN ORIGIN ELSE DESTINATION END AS AIRPORT,
-SUM(FARE_PRICE * NUM_OF_PASSENGERS) AS AIRPORT_REVENUE
-FROM EMPLOYEE_AIR_TRAVEL CROSS JOIN repeat_helper
-ON repeat_helper.x <= 2
-GROUP BY AIRPORT
-
-LIMIT 20;
-</pre>
-
-
-Run a windowing function: 
-
-<pre class="file" data-filename="my_query.sql" data-target="replace">
-
-SELECT CUSTOMER_ORDER_ID,
-CUSTOMER_ID,
-ORDER_DATE,
-PRODUCT_ID,
-QUANTITY,
-MIN(QUANTITY) OVER(PARTITION BY PRODUCT_ID, CUSTOMER_ID) as MIN_PRODUCT_QTY_ORDERED,
-MAX(QUANTITY) OVER(PARTITION BY PRODUCT_ID, CUSTOMER_ID) as MAX_PRODUCT_QTY_ORDERED,
-AVG(QUANTITY) OVER(PARTITION BY PRODUCT_ID, CUSTOMER_ID) as AVG_PRODUCT_QTY_ORDERED
-
-FROM CUSTOMER_ORDER
-
-WHERE ORDER_DATE BETWEEN '2017-03-01' AND '2017-03-31'
-
-ORDER BY CUSTOMER_ORDER_ID
-LIMIT 20;
-</pre>
+`SELECT CUSTOMER_ID, NAME FROM CUSTOMER LIMIT 2;`{{execute}}
