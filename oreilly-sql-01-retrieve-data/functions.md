@@ -1,19 +1,19 @@
 For a lot of logic, you will likely find yourself using functions in SQL. Functions are named methods that accept arguments and then return a value. 
 
-For example, we can use the `len()` function to return the number of characters on a given text field or value. Below we show the `PRODUCT_ID`, `DESCRIPTION`, and the number of characters in the description: 
+For example, we can use the `length()` function to return the number of characters on a given text field or value. Below we show the `PRODUCT_ID`, `DESCRIPTION`, and the number of characters in the description: 
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT PRODUCT_ID,
 DESCRIPTION,
-len(DESCRIPTION) as DESCR_NUM_CHARS
+length(DESCRIPTION) as DESCR_NUM_CHARS
 FROM PRODUCT;
 </pre>
 
 `.read my_query.sql`{{execute}}
 
-Notice it accepts arguments in paranthesis `( )`, and it is preceded with the name of the function `len`. 
+Notice it accepts arguments in paranthesis `( )`, and it is preceded with the name of the function `length`. 
 
-Another common function used is the `round()` function, which rounds a number to a certain number of decimal places. Below we round our `TAXED_PRICE` calculation to two decimal places:
+Another common function is the `round()` function, which rounds a number to a certain number of decimal places. Below we round our `TAXED_PRICE` calculation to two decimal places:
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT PRODUCT_ID,
