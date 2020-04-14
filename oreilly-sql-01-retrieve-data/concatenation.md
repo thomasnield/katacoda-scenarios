@@ -28,7 +28,7 @@ You can also use concatenation to "format" data with symbols, like adding a doll
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT PRODUCT_ID,
 DESCRIPTION,
-PRICE AS UNTAXED_PRICE,
+'$' || PRICE AS UNTAXED_PRICE,
 '$' || round(PRICE * 1.07, 2) AS TAXED_PRICE
 FROM PRODUCT
 </pre>

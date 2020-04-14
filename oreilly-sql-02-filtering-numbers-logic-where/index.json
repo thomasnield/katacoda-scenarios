@@ -1,6 +1,6 @@
 {
-  "title": "Retrieve Data with SELECT",
-  "description": "Retrieve and transform columns in a table using SELECT operator",
+  "title": "Filter Numbers and Logic with WHERE",
+  "description": "Filter records in a table using numerical and logical operators. ",
   "difficulty": "beginner",
   "time": "6 minutes",
   "details": {
