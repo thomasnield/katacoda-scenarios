@@ -28,7 +28,7 @@ FROM PRODUCT;
 
 `.read my_query.sql`{{execute}}
 
-There are a handful of math operators that SQL supports, and these should be supported across all platforms. 
+There are a handful of math operators that SQL supports, and these should be supported across all platforms. These operators should also follow a conventional order of operations (PMDAS) and perform parenthesis, multiplication, division, addition, and subtraction in that order. 
 
 | Symbol | Description            |
 |--------|------------------------|

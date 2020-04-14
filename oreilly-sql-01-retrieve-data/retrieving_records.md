@@ -1,5 +1,5 @@
 
-The most fundamental task in SQL (structured query language) is the `SELECT` operator which allows us to retrieve data. We are going to use a `rexon_metals` database which has 3 tables: `CUSTOMER`, `CUSTOMER_ORDER`, and `PRODUCT`. 
+The most fundamental task in SQL (structured query language) is the `SELECT` operator which allows us to retrieve data from one or more tables. We are going to use the `rexon_metals` database which has 3 tables: `CUSTOMER`, `CUSTOMER_ORDER`, and `PRODUCT`. 
 
 Hopefully a table is a familiar concept. It has rows and columns much like a spreadsheet, but has a defined structure and is more efficient. To view all columns and all records from the `CUSTOMER` table, execute the folling SQL command. 
 
