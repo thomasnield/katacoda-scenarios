@@ -30,4 +30,5 @@ The first argument is the value we are rounding, which in this case is the resul
 
 Every SQL platform may or may not have certain functions implemented, and might have them named differently. When working with a specific database platform, such as MySQL or Oracle, make sure to research what functions are available. You can view SQLite's core functions here: 
 
+**SQLite Core Functions:**
 https://sqlite.org/lang_corefunc.html
