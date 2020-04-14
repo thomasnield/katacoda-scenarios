@@ -22,11 +22,13 @@ SELECT * FROM STATION_DATA WHERE year = 2010 LIMIT 10;
 
 If you come from a programming or scripting background, the familiar double equals `==` should also work. 
 
-Conversely, you can also use an inequality operator `!=` to find records that DO NOT meet a condition. Below, we find records that are not the year 2010 
+Conversely, you can also use an inequality operator `!=` to find records that DO NOT meet a condition. Below, we find records that are not the year 2010:
 
 ```
 SELECT * FROM STATION_DATA WHERE year != 2010 LIMIT 10;
 ```{{execute}} 
+
+Inequality can also be checked with the diamond operator `<>`, which is alternative symbol to express `!=`. 
 
 We can also specify inclusive ranges using the `BETWEEN` operator. Below, we search for all records between 2005 and 2010 (including 2005 and 2010). 
 

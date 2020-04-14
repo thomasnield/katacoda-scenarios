@@ -5,21 +5,14 @@
   "time": "6 minutes",
   "details": {
     "steps": [{
-      "title": "Retrieving Columns",
-      "text": "retrieving_records.md"
+      "title": "Equality and Ranges",
+      "text": "equality_ranges.md"
 	},
 	{
       "title": "Expressions",
       "text": "expressions.md"
 	},
-	{
-      "title": "Functions",
-      "text": "functions.md"
-	},
-	{
-      "title": "Concatenation",
-      "text": "concatenation.md"
-	}
+
 	],
     "intro": {
       "text": "intro.md",
