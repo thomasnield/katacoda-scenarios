@@ -11,6 +11,10 @@
 	{
       "title": "Expressions",
       "text": "expressions.md"
+	},
+	{
+      "title": "Functions",
+      "text": "functions.md"
 	}
 	],
     "intro": {
