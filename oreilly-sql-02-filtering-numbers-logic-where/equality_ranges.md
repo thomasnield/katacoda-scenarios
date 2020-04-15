@@ -3,7 +3,7 @@ In this set of exercises, we are going to learn how to filter records using SQL,
 We are going to use the `weather_stations.db` database file in SQLite, and there is only one table called `STATION_DATA`. It has 28,000 records containing weather measurement data. 
 
 ```
-SELECT COUNT(*) FROM STATION_DATA;
+SELECT * FROM STATION_DATA;
 ```{{execute}} 
 
 To do any kind of productive analysis, we are going to have to find a way to navigate all these records. Let's start with the `WHERE` clause, which allows us to return records that meet a condtion. 
@@ -33,7 +33,7 @@ Inequality can also be checked with the diamond operator `<>`, which is alternat
 We can also specify inclusive ranges using the `BETWEEN` operator. Below, we search for all records between 2005 and 2010 (including 2005 and 2010). 
 
 ```
-SELECT * FROM STATION_DATA WHERE year BETWEEN 2005 AND 2010;
+SELECT * FROM STATION_DATA WHERE year BETWEEN 2005 AND 2010 LIMIT 10;
 ```{{execute}} 
 
 

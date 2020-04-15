@@ -5,7 +5,8 @@ If I want to find all records where tornado and hail were present, I just qualif
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT * FROM station_data
-WHERE tornado = 1 AND hail = 1;
+WHERE tornado = 1 AND hail = 1
+LIMIT 10;
 </pre>
 
 `.read my_query.sql`{{execute}}
@@ -14,7 +15,8 @@ If you want to qualify records where tornado is true and hail is false, set hail
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT * FROM station_data
-WHERE tornado = 1 AND hail = 0;
+WHERE tornado = 1 AND hail = 0
+LIMIT 10;
 </pre>
 
 `.read my_query.sql`{{execute}}
@@ -23,7 +25,8 @@ The `WHERE` condition itself actually boils down to a true (1) or false (0), and
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT * FROM station_data
-WHERE tornado AND hail;
+WHERE tornado AND hail
+LIMIT 10;
 </pre>
 
 `.read my_query.sql`{{execute}}
@@ -32,7 +35,8 @@ But if you want to negate one of the conditions being false, you have to use `= 
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT * FROM station_data
-WHERE tornado AND NOT hail;
+WHERE tornado AND NOT hail
+LIMIT 10;
 </pre>
 
 `.read my_query.sql`{{execute}}
@@ -41,7 +45,8 @@ You can also choose to use the keywords `true` and `false`, which will implicitl
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT * FROM station_data
-WHERE tornado = true AND hail = false;
+WHERE tornado = true AND hail = false
+LIMIT 10;
 </pre>
 
 `.read my_query.sql`{{execute}}
