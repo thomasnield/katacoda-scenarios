@@ -1,26 +1,20 @@
 In this set of exercises, we are going to learn how to filter records using SQL, particularly on numerical and boolean (true/false) fields. 
 
-We are going to use the `weather_stations.db` database file in SQLite, and there is only one table called `STATION_DATA`. It has 28,000 records containing weather measurement data. 
+We are going to use the `weather_stations.db` database file in SQLite, and there is only one table called `STATION_DATA`. It has 28,000 records containing weather measurement data. There are a lot of records, so let's limit our queries to 10 records so we don't flood our console: 
 
 ```
-SELECT * FROM STATION_DATA;
+SELECT * FROM STATION_DATA LIMIT 10;
 ```{{execute}}
 
-> Since there are a lot of columns, a condensed formatting has been configured to display outputs to the console. 
 
 To do any kind of productive analysis, we are going to have to find a way to navigate all these records. Let's start with the `WHERE` clause, which allows us to return records that meet a condtion. 
 
 For example, we can get all records for the year 2010 using the equality operator `=`. 
 
 ```
-SELECT * FROM STATION_DATA WHERE year = 2010;
-```{{execute}} 
-
-It can be a bit overwhelming to view all records in the console, so let's slap on a `LIMIT 10` just to sample a few records: 
-
-```
 SELECT * FROM STATION_DATA WHERE year = 2010 LIMIT 10;
 ```{{execute}} 
+
 
 If you come from a programming or scripting background, the familiar double equals `==` should also work. 
 
