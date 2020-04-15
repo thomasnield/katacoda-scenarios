@@ -12,4 +12,4 @@ mv sqlite3 ../sqlite3 &&
 cd .. && curl -L "https://github.com/thomasnield/oreilly_sql_fundamentals_for_data/blob/master/databases/rexon_metals.db?raw=true" >> rexon_metals.db &&
 rm -rf sqlite-amalgamation-3310100 &&
 rm sqlite.zip && reset &&
-./sqlite3 -column -header -cmd '.width 22 22 22 22 22 22 22 22' "rexon_metals.db"
+./sqlite3 -column -header -cmd '.width 0 33 0 16 0 0 0 0' "rexon_metals.db"
