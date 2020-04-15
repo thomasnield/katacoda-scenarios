@@ -4,7 +4,9 @@ We are going to use the `weather_stations.db` database file in SQLite, and there
 
 ```
 SELECT * FROM STATION_DATA;
-```{{execute}} 
+```{{execute}}
+
+> Since there are a lot of columns, a condensed formatting has been configured to display outputs to the console. 
 
 To do any kind of productive analysis, we are going to have to find a way to navigate all these records. Let's start with the `WHERE` clause, which allows us to return records that meet a condtion. 
 
