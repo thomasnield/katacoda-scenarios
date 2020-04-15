@@ -6,6 +6,11 @@ We are going to use the `weather_stations.db` database file in SQLite, and there
 SELECT * FROM STATION_DATA LIMIT 10;
 ```{{execute}}
 
+If your computer screen is too small to display each record on one line and making the output messy, you can condense outputs in "list mode" by running this command: 
+
+```
+.mode list 
+```{{execute}}
 
 To do any kind of productive analysis, we are going to have to find a way to navigate all these records. Let's start with the `WHERE` clause, which allows us to return records that meet a condtion. 
 
