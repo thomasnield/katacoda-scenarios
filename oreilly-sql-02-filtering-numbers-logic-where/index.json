@@ -9,8 +9,16 @@
       "text": "equality_ranges.md"
 	},
 	{
-      "title": "Combined Conditions with AND and OR",
+      "title": "AND, OR, and IN",
       "text": "and_or.md"
+	},
+	{
+      "title": "Boolean Logic",
+      "text": "booleans.md"
+	},
+	{
+      "title": "Order Precedence",
+      "text": "grouping_conditions.md"
 	}
 
 	],
