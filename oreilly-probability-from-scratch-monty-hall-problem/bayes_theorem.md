@@ -1,6 +1,6 @@
 According to our Monte Carlo simulations (which had similiar outcomes in real-life trials), switching seems to give us 66.66% probability of winning while staying keeps our probability the same at 33.33%. How exactly is this happening? 
 
-Think of it this way. When we first chose a door, our probability of winning the prize was 33.33%. When another door is opened, does it change the prize probability of the door we just selected? Or did probability shift between the other two doors? The game show host knows which door has the prize and is not going to open it. So something subtle has happened here. 
+Think of it this way. When we first chose a door, our probability of winning the prize was 33.33%. When another door is opened, does it change the prize probability of the door we just selected? Or did probability shift between the other two doors? The game show host knows which door has the prize and is not going to open it, so something subtle has happened here. 
 
 The best mathematical explanation for what happened is Bayes Theorem, which is a clever formula that allows us to flip a conditional probability:
 
@@ -40,8 +40,6 @@ Conversely, if we stay with **Door 1** and stick with our theory it holds the pr
 
 
 <pre class="file" data-filename="monty_hall.py" data-target="replace">
-from random import randint
-
 p_prize1 = 1.0 / 3.0    # probability of prize in door 1
 p_left2_prize1 = .5     # probability of door 2 left given prize in door 1
 p_left2 = .5            # probability of door 2 being left

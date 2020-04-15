@@ -14,7 +14,7 @@ You are on a game show standing in front of 3 closed doors, and behind one of th
 
 ```
 
-You choose a door, and rightfuly believe you have a 1/3 (33.33% chance) of winning the prize. But here comes the twist. The game show host now opens another door revealing no prize, and offers you the opportunity to switch to the other unopened door. 
+You choose a door and correctly believe you have a 1/3 (33.33% chance) of winning the prize. But here comes the twist: the game show host now opens another door revealing no prize, and offers you the opportunity to switch to the other unopened door. 
 
 Do you switch? You can play the game using this Python code. First, copy it to the editor: 
 
