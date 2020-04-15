@@ -6,7 +6,7 @@ We are going to use the `weather_stations.db` database file in SQLite, and there
 SELECT * FROM STATION_DATA LIMIT 10;
 ```{{execute}}
 
-If your computer screen is too small to display each record on one line and making the output messy, you can condense outputs in "list mode" by running this command: 
+If your computer screen is too small to display each record on one line and it is making the output messy, you can condense outputs in "list mode" by running this command: 
 
 ```
 .mode list 

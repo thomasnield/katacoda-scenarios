@@ -40,7 +40,8 @@ For example, here is a query that looks for records that have either sleet or sn
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT * FROM station_data
-WHERE rain = 1 AND temperature <= 32 OR snow_depth > 0;
+WHERE rain = 1 AND temperature <= 32 OR snow_depth > 0
+LIMIT 10;
 </pre>
 
 `.read my_query.sql`{{execute}}
@@ -51,7 +52,8 @@ So the best thing to do is to group up related conditions in paranthesis, which 
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT * FROM station_data
-WHERE (rain = 1 AND temperature <= 32) OR snow_depth > 0;
+WHERE (rain = 1 AND temperature <= 32) OR snow_depth > 0
+LIMIT 10;
 </pre>
 
 `.read my_query.sql`{{execute}}
