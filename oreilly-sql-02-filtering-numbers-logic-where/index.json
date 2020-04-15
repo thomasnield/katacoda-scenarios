@@ -6,27 +6,23 @@
   "details": {
     "steps": [{
       "title": "Equality and Ranges",
-      "text": "equality_ranges.md",
-	  "code": "my_query.sql"
+      "text": "equality_ranges.md"
 	
 	},
 	{
       "title": "AND, OR, and IN",
-      "text": "and_or.md",
-	  "code": "my_query.sql"
+      "text": "and_or.md"
 	
 	},
 	{
       "title": "Boolean Logic",
-      "text": "booleans.md",
-	  "code": "my_query.sql"
+      "text": "booleans.md"
 	
 	},
 	{
       "title": "Order Precedence",
-      "text": "grouping_conditions.md",
-	  "code": "my_query.sql"
-	
+      "text": "grouping_conditions.md"
+
 	}
 
 	],
