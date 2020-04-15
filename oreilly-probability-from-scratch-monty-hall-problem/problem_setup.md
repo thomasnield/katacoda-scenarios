@@ -1,5 +1,5 @@
 
-The Monty Hall Problem is a great way to appreciate how nuanced probability can be. When it first received mainstream attention in the 1990's, it even [baffled mathematicians and statisticiansmuch to their chagrin](https://priceonomics.com/the-time-everyone-corrected-the-worlds-smartest/). 
+The Monty Hall Problem is a great way to appreciate how nuanced probability can be. When it first received mainstream attention in the 1990's, it even [baffled mathematicians and statisticians much to their chagrin](https://priceonomics.com/the-time-everyone-corrected-the-worlds-smartest/). 
 
 **Here is the brain teaser:**
 
