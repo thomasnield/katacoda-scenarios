@@ -1,7 +1,7 @@
 
 Hopefully the concept of **probability** is familiar, which measures how likely and outcome is (as observed or believed) and typically is represented as a number `P(X)` between 0.0 and 1.0. **Probabilities for an event must account for all outcomes, which all must sum to 1.0.**
 
-If we have a 60% belief an event will happen (such as a product being defective), it would be expressed as 0.6. We may have this belief because out of 10 products we sampled, 6 were defective. 
+If we have a 60% belief an event will happen (such as a product being defective), it would be expressed as 0.6. Conversely, we should also have a 0.4 probability belief that it will not happen (not be defective). We may have this belief because out of 10 products we sampled, 6 were defective. 
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">
 defective_product_count = 6.0
