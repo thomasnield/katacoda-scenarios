@@ -28,7 +28,7 @@ print(non_defective_probability)
 
 `python3 probability_math.py`{{execute}}
 
-Probabilities have many uses inside and outside of data science, statistics, machine learning, and many other disciplines. A fun way to use probabilities is to create simulations, which can be used to make discoveries. For example, here is a simple simulation that does 100 weighted coin flips with a .6 probability for heads: 
+Probabilities have many uses in data science, statistics, machine learning, and many other disciplines. A fun way to use probabilities is to create simulations, which can be used to make discoveries. For example, here is a simple simulation that does 100 weighted coin flips with a .6 probability for heads: 
 
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">
