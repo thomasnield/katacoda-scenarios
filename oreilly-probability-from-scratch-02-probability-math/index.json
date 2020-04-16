@@ -1,6 +1,6 @@
 {
-	"title": "Monty Hall Problem",
-	"description": "Understand the nuances of probability with the game show puzzle",
+	"title": "Probability Math",
+	"description": "Learn the fundamental operations in working with probabilities",
 	"difficulty": "beginner",
 	"time": "7 minutes",
 	"details": {
@@ -22,7 +22,7 @@
 		"uilayout": "editor-terminal",
 		"uimessage1": "\u001b[32mIntroduction "
 	},
-	"files" : ["monty_hall.py"],
+	"files" : ["probability_math.py"],
 	"backend": {
 		"imageid": "bash"
 	}
