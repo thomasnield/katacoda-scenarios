@@ -1,6 +1,6 @@
 {
-  "title": "Introduction to Regular Expressions",
-  "description": "Learn Text Patterns and Parsing Fast!",
+  "title": "Regular Expressions: Literals and Ranges",
+  "description": "Use regular expressions to detect ranges of characters",
   "difficulty": "beginner",
   "time": "40 minutes",
   "details": {
@@ -10,15 +10,15 @@
 	},
 	{
       "title": "Character Ranges I",
-      "text": "chracter_ranges1.md"
+      "text": "character_ranges1.md"
 	},
 	{
       "title": "Character Ranges II",
-      "text": "chracter_ranges2.md"
+      "text": "character_ranges2.md"
 	},
 	{
       "title": "Character Ranges III",
-      "text": "chracter_ranges3.md"
+      "text": "character_ranges3.md"
 	}
 	],
     "intro": {

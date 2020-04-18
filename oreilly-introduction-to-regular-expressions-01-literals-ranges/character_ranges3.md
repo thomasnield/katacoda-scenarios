@@ -4,3 +4,30 @@ We can also specify multiple ranges of values in a single character position. Fo
 `match(regex="[A-Z0-9][0-9]", str="55")`{{execute}}
 `match(regex="[A-Z0-9][0-9]", str="AZ")`{{execute}}
 
+We can specify a range of uppercase or lowercase letters at a given position, effectively removing case sensitivity, like this using `[A-Za-z]`: 
+
+`match(regex="[A-Za-z][0-9]", str="I5")`{{execute}}
+`match(regex="[A-Za-z][0-9]", str="i5")`{{execute}}
+
+A shorthand for an uppercase or lowercase letter can be shorthanded with `[A-z]`: 
+
+`match(regex="[A-z][0-9]", str="I5")`{{execute}}
+`match(regex="[A-z][0-9]", str="i5")`{{execute}}
+
+
+We can also qualify a set of values along with a range. If we want to allow only 1,2,3, or an uppercase letter in the first position, we can do so with `[123A-Z]`:
+
+`match(regex="[123A-Z][A-Z]", str="3B")`{{execute}}
+`match(regex="[123A-Z][A-Z]", str="CB")`{{execute}}
+`match(regex="[123A-Z][A-Z]", str="5B")`{{execute}}
+
+Hopefully you have a growing appreciation for the specificity character ranges allow, and allow more capability than simple and broad wildcarding patterns.
+
+**Resources:**
+
+Python Regular Expressions (W3 Schools):
+https://www.w3schools.com/python/python_regex.asp
+
+Python Docs:
+https://docs.python.org/2/library/re.html
+
