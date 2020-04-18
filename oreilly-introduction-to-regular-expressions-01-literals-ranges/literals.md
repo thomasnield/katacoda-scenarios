@@ -1,5 +1,5 @@
 
-We are going to use Python to learn about regular expressions (also known as "regex"), in particular literals and character ranges. To streamline the experience a little bit, let us wrap up some of the Python functions into our own function called `match(regex, str)`. Let's put it in our editor so we can use it:
+We are going to use Python to learn about regular expressions literals and character ranges. To streamline the experience a little bit, let us wrap up some of the Python regex functions into our own function called `match(regex, str)`. Copy it to our editor so we can use it:
 
 <pre class="file" data-filename="regex_helper.py" data-target="replace">
 import re

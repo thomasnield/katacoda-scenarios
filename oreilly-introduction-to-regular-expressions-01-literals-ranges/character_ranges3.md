@@ -25,9 +25,12 @@ Hopefully you have a growing appreciation for the specificity character ranges a
 
 **Resources:**
 
-Python Regular Expressions (W3 Schools):
-https://www.w3schools.com/python/python_regex.asp
+An Introduction to Regular Expressions: 
+https://learning.oreilly.com/library/view/an-introduction-to/9781492082569/
 
 Python Docs:
 https://docs.python.org/2/library/re.html
 
+Understanding Regular Expressions (Videos):
+https://learning.oreilly.com/videos/understanding-regular-expressions/9781491996300
+ 
