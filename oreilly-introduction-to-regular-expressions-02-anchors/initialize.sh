@@ -1,5 +1,4 @@
-echo " 
-French Macaroons (24 servings)
+echo "French Macaroons (24 servings)
 
 6 egg whites
 1 cups white sugar
@@ -8,14 +7,11 @@ French Macaroons (24 servings)
 
 Beat eggs in bowl and then add sugar.
 
-Let sit for 2 minutes and continue beating
-" >> recipe.txt
+Let sit for 2 minutes and continue beating" >> recipe.txt
 
-echo  "
-AS ABQ DAL 12:35 13:45 180
+echo  "AS ABQ DAL 12:35 13:45 180
 NK PHX HOU 14:15 16:45 190
-AA MDW JFK 12:45 14:35 180
-" >> flights.txt
+AA MDW JFK 12:45 14:35 180" >> flights.txt
 
 
 curl -L  https://gist.githubusercontent.com/thomasnield/95897f86e7495d33173b08f7cfe20a38/raw/19309c5f869e65f513c38bbab7893a4da72bfb75/regex_helper.py >> regex_helper.py

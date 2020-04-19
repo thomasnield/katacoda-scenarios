@@ -1,13 +1,17 @@
 {
-  "title": "Regular Expressions: Literals and Ranges",
-  "description": "Use regular expressions to detect ranges of characters",
+  "title": "Regular Expressions: Anchoring",
+  "description": "Use regular expressions to anchor lines and strings",
   "difficulty": "beginner",
   "time": "6 minutes",
   "details": {
     "steps": [{
       "title": "Setting Up",
       "text": "setting_up.md"
+	},{
+      "title": "Line Anchors",
+      "text": "line_anchors.md"
 	}
+	
 	],
     "intro": {
       "text": "intro.md",

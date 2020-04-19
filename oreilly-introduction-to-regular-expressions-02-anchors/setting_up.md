@@ -29,8 +29,7 @@ Beat eggs in bowl and then add sugar.
 
 Let sit for 2 minutes and continue beating
 ```
-
-You can search for matches in one of the files using the `find_all()` function. Below we get all 3-letter airport codes from the `flights.txt` file: 
+For some of the examples here, we are going to use another regular expression function called `findall(regex,file)`. Instead of simply returning a full match, it will return all partial matches that are found in a text file. Below we get all 3-letter airport codes from the `flights.txt` file: 
 
 `findall(regex='[A-Z][A-Z][A-Z]', file='flights.txt')`{{execute}}
 
