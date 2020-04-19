@@ -33,8 +33,7 @@
     "finish": {
       "text": "finish.md"
     }
-  },
-  "files" : ["regex_helper.py"], 
+  }
   
   "environment": {
     "uilayout": "editor-terminal",

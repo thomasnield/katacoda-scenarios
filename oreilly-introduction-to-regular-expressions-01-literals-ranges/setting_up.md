@@ -1,5 +1,5 @@
 
-We are going to use Python to learn about regular expression literals and character ranges. To streamline the experience a little bit, let us wrap up some of the Python regex functions into our own function called `match(regex, str)`. Copy it to our editor so we can use it:
+We are going to use Python to learn about regular expression literals and character ranges. To streamline the experience a little bit, some Python regex functions have been wrapped into a function called `match(regex, str)`. 
 
 <pre class="file" data-filename="regex_helper.py" data-target="replace">
 import re
@@ -12,7 +12,7 @@ def match(regex, str):
         return 'NO MATCH'
 </pre>
 
-Now let's test a regular expression to see if the function works: 
+Test a regular expression to see if the function works: 
 
 
 `match(regex="[A-Z]{2}", str="TX")`{{execute}}

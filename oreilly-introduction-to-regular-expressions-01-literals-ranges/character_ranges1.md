@@ -21,13 +21,3 @@ A shorthand for `[0-9]` can be expressed as `\d`, but keep in mind that using lo
 
 `match(regex="\d[A-Z]", str="7X")`{{execute}}
 
-If you want to qualify a range of values but include other characters, like a "-" or "_", put them in the character range first: 
-
-`match(regex="[-_0-9][A-Z]", str="-X")`{{execute}}
-`match(regex="[-_0-9][A-Z]", str="_X")`{{execute}}
-`match(regex="[-_0-9][A-Z]", str="7X")`{{execute}}
-
-To negate a set of characters, start the character range with a caret `^`. If we want to match anything but a number in the first position, followed by an uppercase letter, we can 
-
-`match(regex="[^0-9][A-Z]", str="9X")`{{execute}}
-`match(regex="[^0-9][A-Z]", str="FX")`{{execute}}
