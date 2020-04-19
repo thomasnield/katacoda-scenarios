@@ -1,0 +1,48 @@
+{
+  "title": "Regular Expressions: Quantifiers",
+  "description": "Use regular expressions to repeat patterns",
+  "difficulty": "beginner",
+  "time": "6 minutes",
+  "details": {
+    "steps": [{
+      "title": "Setting Up",
+      "text": "setting_up.md"
+	},
+	
+	{
+      "title": "Fixed Repetitions",
+      "text": "fixed_repetitions.md"
+	},
+	{
+      "title": "Min/Max Repetitions",
+      "text": "min_max_repetitions.md"
+	},
+	{
+      "title": "Optionals",
+      "text": "optional.md"
+	},
+	{
+      "title": "unlimited.md"
+	}
+	
+	
+	
+	],
+    "intro": {
+      "text": "intro.md",
+      "credits": "",
+	  "code" : "initialize.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mIntroduction "
+  },
+  "backend": {
+    "imageid": "bash"
+  }
+}
