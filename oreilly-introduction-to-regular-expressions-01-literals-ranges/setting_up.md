@@ -1,7 +1,7 @@
 
-We are going to use Python to learn about regular expression literals and character ranges. To streamline the experience a little bit, some Python regex functions have been wrapped into a function called `match(regex, str)`. 
+We are going to use Python to learn about regular expression literals and character ranges. To streamline the experience a little bit, some Python regex functions have been wrapped into a function called `match(regex, str)` into the file `regex_helper.py` to the right. 
 
-<pre class="file" data-filename="regex_helper.py" data-target="replace">
+```python
 import re
 
 def match(regex, str):
@@ -10,7 +10,7 @@ def match(regex, str):
         return 'MATCH'
     else:
         return 'NO MATCH'
-</pre>
+```
 
 Test a regular expression to see if the function works: 
 
