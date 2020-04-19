@@ -2,7 +2,7 @@
   "title": "Regular Expressions: Literals and Ranges",
   "description": "Use regular expressions to detect ranges of characters",
   "difficulty": "beginner",
-  "time": "40 minutes",
+  "time": "5 minutes",
   "details": {
     "steps": [{
       "title": "Setting Up",

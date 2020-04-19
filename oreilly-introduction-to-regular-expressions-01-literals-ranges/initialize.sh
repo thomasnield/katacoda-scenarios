@@ -23,41 +23,7 @@ AA MDW JFK 12:45 14:35 180
 " >> flights.txt
 
 
-echo "
-import re
-
-
-def load_file(filepath):
-    file = open(filepath, mode='r')
-    text = file.read()
-    file.close()
-    return text
-
-
-def match(regex, str):
-    result = re.fullmatch(pattern=regex, string=str)
-    if result:
-        return 'MATCH'
-    else:
-        return 'NO MATCH'
-
-
-def split(regex, str):
-    return re.split(regex, str)
-
-
-def find(regex, str):
-    result = re.findall(regex, str)
-
-    if result:
-        return result[0]
-    else:
-        print('NO MATCH')
-        return None
-
-
-def findall(regex, file):
-    return re.findall(regex, load_file(file), re.MULTILINE)" >> regex_helper.py
+wget https://gist.githubusercontent.com/thomasnield/95897f86e7495d33173b08f7cfe20a38/raw/19309c5f869e65f513c38bbab7893a4da72bfb75/regex_helper.py
 
 
 python3
