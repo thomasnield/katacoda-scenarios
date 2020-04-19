@@ -1,20 +1,9 @@
 
-For the following examples, we are going to use the `recipe.txt` text file. 
+For the following examples, we are going to use the `recipe.txt` text file. Feel free to view it on the right. 
 
-```
-French Macaroons (24 servings)
+Sometimes you will want to qualify the start `^` and end `$` of a line. This can be handy if you are searching a document and only want to identify text patterns that occur at the start of a line. 
 
-6 egg whites
-1 cups white sugar
-2 cups of powdered sugar
-2 cups of almond flour
-
-Beat eggs in bowl and then add sugar.
-
-Let sit for 2 minutes and continue beating
-```
-
-Sometimes you will want to qualify the start `^` and end `$` of a line. This can be handy if you are searching a document and only want to identify text patterns that occur at the start of a line. You can use this regular expression to match all numbers that start a line in a document as shown here: 
+For example, you can use this regular expression to match all numbers that start a line in a document as shown here: 
 
 `findall(regex='^[0-9]', file='recipe.txt')`{{execute}}
 
