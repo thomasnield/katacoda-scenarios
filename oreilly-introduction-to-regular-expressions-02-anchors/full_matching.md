@@ -14,6 +14,6 @@ Note to force a full match on an entire string, we should use `\A` and `\Z` inst
 
 `match(regex="\A[0-9][0-9]\Z", str="237")`{{execute}}
 
-However, if you know your string is going to be one line then `^` and `$` should work just fine. But `\A` and `\Z` becomes necessary when multiple lines could exist in the string, and you want to force a full match on the entire contents. 
+However, if you know your string is going to be one line then `^` and `$` should work just fine. But `\A` and `\Z` becomes necessary when multiple lines could exist in the string, and you want to force a full match on all contents. 
 
 Our `match()` function in Python is configured to do a full match, not a partial one, so in this case it is unnecessary to do anchoring. But if you are ever in doubt, it is a good habit to anchor if you are unsure whether a platform does full or partial matches by default. This will also make the regular expression more portable. 
