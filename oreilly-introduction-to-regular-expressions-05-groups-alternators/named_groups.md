@@ -14,7 +14,7 @@ We discover something broken with this data, where some records have an origin (
 
 What gets interesting here is we want to match a pattern, but then *refer* to that match later. This can be achieved using a **named group**. Below, we capture a named group called "orig" that matches 3 uppercase letters, and then search the next column that matches those three letters:
 
-`findall(regex="(?P<orig>[A-Z]{3}) (?P=orig)", file="flights_broken.txt")`{{execute}}
+`findall(regex="^(.*(?P<orig>[A-Z]{3}) (?P=orig).*)$", file="flights_broken.txt")`{{execute}}
 
 That clause `(?P<orig>[A-Z]{3})` is what defines our named group, and we give it the name "orig". There are some weird and interesting things you can do with groupings (including providing a yes/no pattern alternator), but these become pretty niche and beyond the scope of this scenario.
 
