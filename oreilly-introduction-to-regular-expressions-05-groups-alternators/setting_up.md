@@ -19,7 +19,7 @@ DL ATL ATL 06:05 12:05 190
 
 We will use the `findall()` function to search the document, which will return partial matches. Below, we find all airport codes by finding 3 uppercase alphabetic character sequences:
 
-`findall(regex='[A-Z]{3}', file='flights.txt')`{{execute}}
+`findall(regex='[A-Z]{3}', file='flights_broken.txt')`{{execute}}
 
 
 
