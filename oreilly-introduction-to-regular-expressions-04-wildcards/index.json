@@ -1,6 +1,6 @@
 {
-  "title": "Regular Expressions: Wildcards",
-  "description": "Use regular expressions to repeat patterns",
+  "title": "Regular Expressions IV: Wildcards",
+  "description": "Use regular expressions to capture broader patterns",
   "difficulty": "beginner",
   "time": "6 minutes",
   "details": {

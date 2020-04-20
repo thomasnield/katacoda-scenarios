@@ -1,5 +1,5 @@
 {
-  "title": "Regular Expressions: Quantifiers",
+  "title": "Regular Expressions III: Quantifiers",
   "description": "Use regular expressions to repeat patterns",
   "difficulty": "beginner",
   "time": "6 minutes",
@@ -22,7 +22,8 @@
       "text": "optional.md"
 	},
 	{
-      "title": "unlimited.md"
+      "title": "Unlimited Repetitions",
+	  "text": "unlimited.md"
 	}	
 	
 	],

@@ -10,7 +10,6 @@ It can be helpful to group up parts of a regular expression in parentheses, ofte
 
 Grouping is a powerful functionality in regular expressions, as it allows us to express more complex patterns and repeat entire sequences of sub-sequences. 
 
-
 If we wanted to identify phone numbers (with optional dashes `-`), but make the area code (the first three digits) optional, we can group up the area code and make it optional with `?`: 
 
 `match(regex="([0-9]{3}-)?[0-9]{3}-?[0-9]{4}", str="470-127-7501")`{{execute}}

@@ -1,1 +1,3 @@
-Congratulations on mastering the two fundamental building blocks of regular expressions: literals and ranges. 
+Congratulations on mastering the two fundamental building blocks of regular expressions: literals and ranges. Keep moving forward with other regular expression scenarios to learn how we can use quantifiers, anchors, and grouping to perform more powerful operations with literals and characters. 
+
+Regular expressions may seem niche, but they can rise up heroically to the most unexpected tasks in your day-to-day work. Hopefully this Katacoda has helped you feel more comfortable with regular expressions and find them useful. They can assist in data munging, qualification, categorization, and parsing as well as document editing.
