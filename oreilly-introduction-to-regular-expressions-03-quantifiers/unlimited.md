@@ -29,3 +29,4 @@ An asterisk `*` is a shorthand for `{0,}`, which makes whatever it is quantifyin
 `match(regex="[0-3]+[XYZ]*", str="32YYXZZ")`{{execute}}
 
 A common regular expression `.*` is a wildcard to match anything, and we will cover the dot operator `.` in the next scenario. 
+
