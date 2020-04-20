@@ -15,15 +15,14 @@ We will learn about these functionalities in this and other scenarios. If you wa
 
 `match(regex="\$180", str="$180")`{{execute}}
 
-Note we can also do a match simply by using a single space: 
-
-`match(regex="Lorem Ipsum", str="Lorem Ipsum")`{{execute}}
-
 
 Puting a `\` in front of an alphabetic character can yield a special character literal. For example, `\s` can be used to match any whitespace including tabs, newlines, and carriage returns. 
 
 `match(regex="Lorem\sIpsum", str="Lorem Ipsum")`{{execute}}
 
+Note we can also do a match simply by using a single space: 
+
+`match(regex="Lorem Ipsum", str="Lorem Ipsum")`{{execute}}
 
 We will learn about these special literals enabled by the `\` in this and other modules. But here are some that might come in handy: 
 
