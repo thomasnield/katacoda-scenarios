@@ -30,11 +30,11 @@ DL ATL ATL 06:05 12:05 190
 
 Let's say we want to find all records where the origin (column 2) is ABQ, MDW, or HOU. We can achieve this easily by using an alternator to find those two strings: 
 
-`findall(regex="^.*(ABQ|MDW|HOU) [A-Z]{3}.*$", file="flights_broken.txt")`{{execute}}
+`findall(regex="^(.*(ABQ|MDW|HOU) [A-Z]{3}.*$)", file="flights_broken.txt")`{{execute}}
 
 We should only match two records. Now let's say we wanted to find ABQ, MDW, or HOU in either the origin (column 2) or the destination (column 3). This gets a bit trickier but we can use an alternator to achieve this.
 
-`findall(regex="^.*(((ABQ|MDW|HOU) [A-Z]{3}.*$)|([A-Z]{3} (ABQ|MDW|HOU)))", file="flights_broken.txt")`{{execute}}
+`findall(regex="^.*(((ABQ|MDW|HOU) [A-Z]{3})|([A-Z]{3} (ABQ|MDW|HOU))).*$", file="flights_broken.txt")`{{execute}}
 
 As you can see above, we qualified two different regular expressions as valid: `((ABQ|MDW|HOU) [A-Z]{3}.*$)` as well as `([A-Z]{3} (ABQ|MDW|HOU))`, which qualifies those three airport codes in either column using `|`. 
 
