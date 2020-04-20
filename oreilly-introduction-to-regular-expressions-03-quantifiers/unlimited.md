@@ -3,7 +3,7 @@ We also have two shorthand quantifiers that specify a minimum number of repetion
 
 ## 1 or More Repetitions
 
-Take a quantifier that specifies we need a minimum of one instance of a pattern, but will take as many repetitions that exist after that. Below we capture sequences that repeat at least once: 
+Take a quantifier that specifies we need a minimum of one instance of a pattern, but will take as many repetitions that exist after that. Below we capture `[XYZ]` and `[0-9]` sequences that repeat at least once: 
 
 `match(regex="[XYZ]{1,}", str="Z")`{{execute}}
 
@@ -24,8 +24,8 @@ A `+` is shorthand substitute for `{1,}`, which requires a minimum of 1 repetiti
 
 An asterisk `*` is a shorthand for `{0,}`, which makes whatever it is quantifying completely optional, but will capture as many repetitions it can if they do exist.
 
-`match(regex="[0-3]+[XYZ]*", str="34")`{{execute}}
+`match(regex="[0-3]+[XYZ]*", str="32")`{{execute}}
 
-`match(regex="[0-3]+[XYZ]*", str="34YYXZZ")`{{execute}}
+`match(regex="[0-3]+[XYZ]*", str="32YYXZZ")`{{execute}}
 
 A common regular expression `.*` is a wildcard to match anything, and we will cover the dot operator `.` in the next scenario. 
