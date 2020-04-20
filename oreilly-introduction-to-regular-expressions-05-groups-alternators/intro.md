@@ -1,4 +1,4 @@
-# Regular Expressions: Wildcards 
+ # Regular Expressions: Wildcards 
 
 Many data science, data engineering, and technology professionals have encountered regular expressions at some point. This esoteric, miniature language is used for matching complex text patterns, and looks mysterious and intimidating at first. However, regular expressions (also called “regex”) are a powerful tool that only require a small time investment to learn. They are almost ubiquitously supported wherever there is data. Several analytical and technology platforms support them, including SQL, Python, R, Alteryx, Tableau, LibreOffice, Java, Scala, .NET, and Go. Major text editors and IDE’s like Atom Editor, Notepad++, Emacs, Vim, Intellij IDEA, and PyCharm also support searching files with regular expressions.
 

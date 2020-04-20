@@ -24,3 +24,17 @@ def findall(regex, str=None, file=None):
         
     return re.findall(regex, str, re.MULTILINE)
 ```
+
+**Resources:**
+
+An Introduction to Regular Expressions: 
+https://learning.oreilly.com/library/view/an-introduction-to/9781492082569/
+
+Python Docs:
+https://docs.python.org/2/library/re.html
+
+Understanding Regular Expressions (Videos):
+https://learning.oreilly.com/videos/understanding-regular-expressions/9781491996300
+ 
+Regex101:
+https://regex101.com/

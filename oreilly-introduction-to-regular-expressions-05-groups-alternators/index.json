@@ -1,6 +1,6 @@
 {
-  "title": "Regular Expressions: Quantifiers",
-  "description": "Use regular expressions to repeat patterns",
+  "title": "Regular Expressions: Groups and Alternators",
+  "description": "Use regular expressions to group and alternate patterns,
   "difficulty": "beginner",
   "time": "6 minutes",
   "details": {
@@ -8,20 +8,21 @@
       "title": "Setting Up",
       "text": "setting_up.md"
 	},
-	
 	{
-      "title": "Wild Cards I",
-      "text": "wild_cards1.md"
-	},
-	
-	{
-      "title": "Wild Cards II",
-      "text": "wild_cards1.md"
-	},
-	
-	{
-      "title": "Grouping",
+      "title": "Groups",
       "text": "groups.md"
+	},
+	{
+      "title": "Alternators",
+      "text": "alternator.md"
+	},
+	{
+      "title": "Prefix and Suffix",
+      "text": "prefix_suffix.md"
+	},
+	{
+      "title": "Named Groups",
+      "text": "named_groups.md"
 	}
 	
 	],
