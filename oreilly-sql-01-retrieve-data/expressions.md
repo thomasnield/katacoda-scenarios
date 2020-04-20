@@ -1,7 +1,7 @@
 
-The `SELECT` operation can do a lot more than simply retrieve data. We can also transform data in useful ways before the results are returned. Note this does not modify the table, but rather tansforms the results before they come back. 
+The `SELECT` operation can do a lot more than simply retrieve data. We can also transform data in useful ways before the results are returned. Note this does not modify the table in any way, but rather a manipulation done on-the-fly when we run the query. 
 
-For example, I can calculate a `TAXED_PRICE` field on-the-fly simply by expressing `PRICE * 1.07` as a selected field. I give it a name `TAXED_PRICE` using the `AS` keyword. 
+For example, I can calculate a `TAXED_PRICE` field simply by expressing `PRICE * 1.07` as a selected field. I give it a name `TAXED_PRICE` using the `AS` keyword. 
 
 <pre class="file" data-filename="my_query.sql" data-target="replace">
 SELECT PRODUCT_ID,
@@ -28,7 +28,7 @@ FROM PRODUCT;
 
 `.read my_query.sql`{{execute}}
 
-There are a handful of math operators that SQL supports, and these should be supported across all platforms. These operators should also follow a conventional order of operations (PMDAS) and perform parenthesis, multiplication, division, addition, and subtraction in that order. 
+There are a handful of math operators that SQL supports, and these should be supported across all platforms. These operators should also follow a conventional order of operations (PMDAS) and execute parenthesis, multiplication, division, addition, and subtraction in that order. 
 
 
 | Symbol | Description            |
@@ -40,4 +40,4 @@ There are a handful of math operators that SQL supports, and these should be sup
 | %      | Divides two numbers, but returns remainder|
 | ( )    | Groups up an expression so it is evaluated first|
 
-However, if you need to do other tasks like exponents and trigonometry you will need to use functions. 
+However, if you need to do other tasks like exponents, rounding, and trigonometry you will need to use functions. 
