@@ -2,7 +2,7 @@ There are some quantifiers that are so commonly used they have a shorthand symbo
 
 ## 0 or 1 Repetition (a.k.a., optional)
 
-Take this case where we allow 0 or 1 instances of a numeric digit, making it optional. 
+Take this case where we allow 0 or 1 instances of a digit preceding two alphabetic characters: 
 
 `match(regex="[0-9]{0,1}[A-Z]{2}", str="BC")`{{execute}}
 

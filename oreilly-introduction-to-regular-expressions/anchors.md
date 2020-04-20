@@ -32,7 +32,7 @@ def findall(regex, file):
 
 ## Line Anchors
 
-For the following examples, we are going to use another text file called `recipes.txt` with the following contents: 
+For the following examples, we are going to use another text file called `recipe.txt` with the following contents: 
 
 ```
 French Macaroons (24 servings)
