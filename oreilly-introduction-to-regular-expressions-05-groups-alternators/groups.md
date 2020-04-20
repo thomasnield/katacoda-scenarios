@@ -6,7 +6,13 @@ It can be helpful to group up parts of a regular expression in parentheses, ofte
 
 `match(regex="([A-Z][0-9]{3})+", str="A563X264U743")`{{execute}}
 
-`match(regex="([A-Z][0-9]{3}-?)+", str="A563-X264-C578")`{{execute}}
+A pattern you may come across is matching a separator of a repeating pattern, like a comma `,` or a dash `-`. Below we look for sequences of uppercase letters followed by digits, but each group is separated by a `-`. Note we make the `-` optional so it does not have to appear on the last sequence: 
+
+`match(regex="([A-Z]+[0-9]-?)+", str="ALPHA146-BETA6873-GAMMA5767")`{{execute}}
+
+This would also match a non-dashed string: 
+
+`match(regex="([A-Z]+[0-9]-?)+", str="ALPHA146BETA6873GAMMA5767")`{{execute}}
 
 Grouping is a powerful functionality in regular expressions, as it allows us to express more complex patterns and repeat entire sequences of sub-sequences. 
 
@@ -14,7 +20,7 @@ If we wanted to identify phone numbers (with optional dashes `-`), but make the 
 
 `match(regex="([0-9]{3}-)?[0-9]{3}-?[0-9]{4}", str="470-127-7501")`{{execute}}
 
-`match(regex="([0-9]{3}-)?[0-9]{3}-?[0-9]{4}", str="127-75011")`{{execute}}
+`match(regex="([0-9]{3}-)?[0-9]{3}-?[0-9]{4}", str="127-7501")`{{execute}}
 
 Here is another example using groups with optionals. If we need to qualify U.S. zip codes but optionally include the four digit extension, we can group up that four digit extension and make it optional: 
 

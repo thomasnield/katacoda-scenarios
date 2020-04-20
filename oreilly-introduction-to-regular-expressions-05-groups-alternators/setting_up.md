@@ -7,7 +7,7 @@ Now let's test a regular expression to see if the `match()` function works:
 
 The first argument `regex` is our regular expression, and the second argument `str` is the string we are matching against. The function will return either `MATCH` or `NO MATCH`. 
 
-We will also be searching a file `flights_broken.txt` which contains three flight records. 
+We will also be searching a file `flights_broken.txt` which contains five flight records. 
 
 ```
 AS ABQ DAL 12:35 13:45 180
