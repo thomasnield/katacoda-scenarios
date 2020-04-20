@@ -1,4 +1,4 @@
-You can also express a minimum and maximum number of allowable repetitions. `[A-Z]{2,3}` will require a minimum of 2 repetitions but a maximum of 3.
+You can also express a minimum and maximum number of allowable repetitions. `[A-Z]{2,3}` will require 2-3 alphabetic characters: 
 
 `match(regex="[A-Z]{2,3}", str="YCA")`{{execute}}
 
@@ -6,7 +6,7 @@ You can also express a minimum and maximum number of allowable repetitions. `[A-
 
 `match(regex="[A-Z]{2,3}", str="ARIZONA")`{{execute}}
 
-Leaving the second argument empty and having a comma still present will result in an infinite maximum, and therefore specify only a minimum. Below, we have a regex that will match on a minimum of two alphanumeric characters.
+Leaving the second argument empty and having a comma still present will result in an infinite maximum, and therefore specify only a minimum. Below we have a regex that will match on a minimum of two alphanumeric characters.
 
 `match(regex="[A-Za-z0-9]{2,}", str="YZ1")`{{execute}}
 
