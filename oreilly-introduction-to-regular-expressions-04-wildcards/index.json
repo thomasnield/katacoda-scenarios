@@ -1,5 +1,5 @@
 {
-  "title": "Regular Expressions: Quantifiers",
+  "title": "Regular Expressions: Wildcards",
   "description": "Use regular expressions to repeat patterns",
   "difficulty": "beginner",
   "time": "6 minutes",
@@ -17,13 +17,9 @@
 	{
       "title": "Wild Cards II",
       "text": "wild_cards1.md"
-	},
-	
-	{
-      "title": "Grouping",
-      "text": "groups.md"
 	}
 	
+ 
 	],
     "intro": {
       "text": "intro.md",

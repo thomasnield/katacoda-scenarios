@@ -7,7 +7,6 @@ A dot `.` is a wildcard for any character, making it the broadest operator you c
 `match(regex="H.{3}O", str="HELLO")`{{execute}}
 
 
-
 One thing to note carefully is like many metacharacters, the `.` inside a character range `[]` is treated as a literal and does not function as a wildcard. 
 
 `match(regex="([0-9.]+", str="172.18.83.245")`{{execute}}
