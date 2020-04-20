@@ -23,6 +23,10 @@
 	{
       "title": "Character Ranges III",
       "text": "character_ranges3.md"
+	},
+	{
+      "title": "Partial Match Search",
+      "text": "document_search.md"
 	}
 	],
     "intro": {
