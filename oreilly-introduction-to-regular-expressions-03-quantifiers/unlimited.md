@@ -1,5 +1,5 @@
 
-We also have two shorthand quantifiers that specify a minimum number of repetions of 1 `+` or 0 `*`, but will capture as many repetitions that exist after that. 
+We also have two shorthand quantifiers that specify a minimum number of 1 or 0 repetitions, but will capture as many repetitions that exist after that. 
 
 ## 1 or More Repetitions
 

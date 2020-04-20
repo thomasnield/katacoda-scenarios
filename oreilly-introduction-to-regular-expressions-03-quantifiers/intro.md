@@ -1,6 +1,6 @@
 # Regular Expressions III: Quantifiers
 
-Learning about the quantifier is the turning point where we start to realize the power of regular expressions. When we can capture repetitions of a pattern dynamically, it allows us a powerful balance of flexiblity and specificity that can be tedious to do manually with other parsing tools. 
+Learning about the quantifier is the turning point to realize the power of regular expressions. When we can capture repetitions of a pattern dynamically, it allows us a powerful balance of flexiblity and specificity that can be tedious to do manually. 
 
 Python3 is going to be our environment to learn these regex functionalities, but our knowledge should largely transfer to other platforms. 
 

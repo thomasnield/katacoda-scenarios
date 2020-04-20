@@ -1,3 +1,5 @@
+There are a handful of shorthand symbols for common quantifiers.
+
 Take this case where we allow 0 or 1 instances of a digit preceding two alphabetic characters: 
 
 `match(regex="[0-9]{0,1}[A-Z]{2}", str="BC")`{{execute}}
@@ -18,5 +20,3 @@ Taking our phone number example earlier, we can make the dashes now optional as 
 `match(regex="[0-9]{3}-?[0-9]{3}-?[0-9]{4}", str="470-127-7501")`{{execute}}
 
 `match(regex="[0-9]{3}-?[0-9]{3}-?[0-9]{4}", str="4701277501")`{{execute}}
-
-As you start combining different operations, a regular expression can start to look overwhelming. But the secret is to read a regex left-to-right, and break down what each operation is scanning for. 

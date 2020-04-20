@@ -1,4 +1,4 @@
-The `^` and `$` anchor the start and end of a line respectively. When you are scanning a multiline string or document, you can anchor the start and end of the entire string/document with `\A` and `\Z`. 
+As we learned, the `^` and `$` anchor the start and end of a line respectively. When you are scanning a multiline string or document, you can anchor the start and end of the entire string/document with `\A` and `\Z`. 
 
 To match the first letter in a document, only if it starts the document, run the code below: 
 

@@ -24,7 +24,7 @@ Note we can also do a match simply by using a single space:
 
 `match(regex="Lorem Ipsum", str="Lorem Ipsum")`{{execute}}
 
-We will learn about these special literals enabled by the `\` in this and other modules. But here are some that might come in handy: 
+We will learn about these special literals enabled by the `\` later. But here are some that might come in handy: 
 
 |Regex|Description|
 |---|---|

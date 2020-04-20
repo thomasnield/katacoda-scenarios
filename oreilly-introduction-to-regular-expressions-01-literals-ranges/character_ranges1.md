@@ -13,7 +13,7 @@ You can also define a consecutive span of letters or numbers by putting a – be
 
 `match(regex="[1-4][A-F]", str="51")`{{execute}}
 
-If you want to simply match a number followed by a letter, qualify a range of all values for each: 
+If you want to simply match any number followed by any letter, qualify a range of all values for each: 
 
 `match(regex="[0-9][A-Z]", str="7X")`{{execute}}
 
