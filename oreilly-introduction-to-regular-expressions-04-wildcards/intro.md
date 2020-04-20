@@ -1,6 +1,6 @@
 # Regular Expressions IV: Wildcards 
 
-The `.` operator is an important functionality in regular expressions, allowing us to match anything and everything to give us broad captures we may not care to qualify but want to include. They are often used in tandem with more specific patterns, as we should prefer specifity in composing regular expressions. We will also cover a few usage patterns using the dot `.` operator. 
+The dot `.` operator is an important functionality in regular expressions, allowing us to match anything and everything. It qualifies broad captures we may not care to qualify specifically but want to include. They are often used in tandem with more specific patterns, as we should prefer specifity in composing regular expressions. We will also cover a few usage patterns using the dot `.` operator. 
 
 Python3 is going to be our environment to learn these regex functionalities, but our knowledge should largely transfer to other platforms. 
 
