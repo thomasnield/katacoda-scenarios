@@ -29,7 +29,7 @@ Conversely, you can also use an inequality operator `!=` to find records that DO
 SELECT * FROM STATION_DATA WHERE year != 2010 LIMIT 10;
 ```{{execute}} 
 
-Inequality can also be checked with the diamond operator `<>`, which is alternative symbol to express `!=`. 
+Inequality can also be checked with the diamond operator `<>`, which is an alternative symbol to express `!=`. 
 
 We can also specify inclusive ranges using the `BETWEEN` operator. Below, we search for all records between 2005 and 2010 (including 2005 and 2010). 
 
