@@ -9,8 +9,12 @@
 			"text": "probability_basics.md"
 		},
 		{
-			"title": "Joint Probability",
+			"title": "Joint Probability (AND)",
 			"text": "joint_probability.md"
+		},
+		{
+			"title": "Union Probability (OR)",
+			"text": "union_probability.md"
 		}
 		],
 		"intro": {
