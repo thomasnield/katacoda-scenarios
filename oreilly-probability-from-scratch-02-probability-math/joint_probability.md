@@ -14,11 +14,11 @@ An example of this would be flipping a quarter and a die, and getting a heads (A
 If `A` and `B` are completely independent from each other, like the quarter and the die, then calculating the joint probability is as easy as multiplying them together:
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">
-prob_A = 1.0 / 2.0 # probabilty of heads
-prob_B = 1.0 / 6.0 # probability of six 
+prob_heads = 1.0 / 2.0 # probabilty of heads
+prob_six = 1.0 / 6.0 # probability of six 
 
-prob_A_and_B = prob_A * prob_B 
-print(prob_A_and_B)
+prob_heads_and_6 = prob_heads * prob_six 
+print(prob_heads_and_6)
 </pre>
 
 `python3 probability_math.py`{{execute}}
