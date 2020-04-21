@@ -1,5 +1,5 @@
 
-Probability gets more interesting and challenging when we think about multiple random variables, each with their probability. Questions emerge on how these probabilities interact with each other. 
+Probability gets more interesting when we think about multiple random variables, each with their probability. Questions emerge on how these probabilities interact with each other. 
 
 Say we have a probability for Event A and Event B occurring simultaneously, which is known as a **joint probability**. This would be expressed in the following ways:
 
@@ -85,7 +85,7 @@ print("Probability of 3 consecutive failures: {}".format(three_fails_prob))
 
 `python3 probability_math.py`{{execute}}
 
-If you are unfamiliar with logarithms, just know that they allow us to bypass the floating point underflow issue by using addition instead of multiplication. There is no shortage of resources to explain logarithms which are essentially are the reverse of exponents. 
+If you are unfamiliar with logarithms, just know that they allow us to bypass the floating point underflow issue by using addition instead of multiplication. There are several online tutorials to learn about logarithms, including the ones below: 
 
 **Resources:**
 

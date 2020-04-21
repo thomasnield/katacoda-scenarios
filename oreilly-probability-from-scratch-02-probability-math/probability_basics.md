@@ -1,25 +1,9 @@
 
-Hopefully the concept of **probability** is familiar, which measures how likely and outcome is (as observed or believed) and typically is represented as a number `P(X)` between 0.0 and 1.0. **Probabilities for an event must account for all outcomes, which all must sum to 1.0.**
+Hopefully the concept of **probability** is familiar, which measures how likely and outcome is and typically is represented as a number `P(X)` between 0.0 and 1.0. 
 
-If we have a 60% belief an event will happen (such as a product being defective), it would be expressed as 0.6. Conversely, we should also have a 0.4 probability belief that it will not happen (not be defective). We may have this belief because out of 10 products we sampled, 6 were defective. 
+If we have a 60% belief an event will happen (such as a product being defective), it would be expressed as 0.6. We may have this belief because out of 10 products we sampled, 6 were defective. Because all outcomes of an event must add up to 100%, or 1.0, the probability of an event not occuring is `1.0 - P(X)`.
 
-<pre class="file" data-filename="probability_math.py" data-target="replace">
-defective_product_count = 6.0
-total_product_sample = 10.0
-defective_probability = defective_product_count / total_product_sample
-print(defective_probability)
-</pre>
-
-Copy the code above, and then execute it using the Python command below: 
-
-`python3 probability_math.py`{{execute}}
-
-Because we based our probability purely on frequency of events occuring in data, this is a **frequentist** approach. If we did not have any data (or have limited amounts of data) we could speculate a 0.6 probability based on anecdotal evidence,  qualitative factors, or partial data. In this case, we use a **Bayesian** approach that treats probability as a belief, even if it is imperfect. Both approaches are useful and have situational benefits and drawbacks. 
-
-Conversely, every probability is represented as a part of a whole of all events represented by 1.0. If you have the probability of event `P(X)` occuring, then the probability of an event not occuring is `1.0 - P(X)`: 
-
-Probabilities have many uses in data science, statistics, machine learning, and many other disciplines. A fun way to use probabilities is to create simulations, which can be used to make discoveries. For example, here is a simple simulation that does 100 weighted coin flips with a .6 probability for heads: 
-
+Probabilities have many uses in data science, statistics, machine learning, and many other disciplines. A fun way to use probabilities is to create simulations. For example, here is a simple simulation that does 100 weighted coin flips with a .6 probability for heads: 
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">
 import random
@@ -35,6 +19,7 @@ print("# HEADS: {}/100".format(heads))
 
 `python3 probability_math.py`{{execute}}
 
+You could also use this to simulate defective products coming off an assembly line, and mix it with other random variables in a simulation.
 
 Another way to represent probablity is as an **odds ratio**. Rather than represent probability on a scale between 0.0 and 1.0, we represent it as a factor of how many times we believe something to be true over not being true.
 
@@ -49,7 +34,7 @@ print(defective_odds)
 
 `python3 probability_math.py`{{execute}}
 
-Representing odds can be helpful way to express probabilities, especially when you are forming your own beliefs. To convert an odds `O(X)` to a probability `P(X)`, you can use this formula: 
+Representing odds can be helpful alternative way to express probabilities. To convert an odds `O(X)` to a probability `P(X)`, you can use this formula: 
 
 ```
 P(X) = O(X) / (1.0 + O(X))
