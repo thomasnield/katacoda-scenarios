@@ -2,7 +2,7 @@
 	"title": "Probability Math",
 	"description": "Learn the fundamental operations in working with probabilities",
 	"difficulty": "beginner",
-	"time": "7 minutes",
+	"time": "15 minutes",
 	"details": {
 		"steps": [{
 			"title": "Probability Basics",
@@ -19,6 +19,10 @@
 		{
 			"title": "Conditional Probability",
 			"text": "conditional_probability.md"
+		},
+		{
+			"title": "Bayes Theorem",
+			"text": "bayes_theorem.md"
 		}
 		],
 		"intro": {

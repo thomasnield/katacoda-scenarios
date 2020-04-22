@@ -37,9 +37,9 @@ print("P(color blind and female) = {}".format(p_colorblind_and_female))
 `python3 probability_math.py`{{execute}}
 
 
-The probability of being *color blind and male*, `0.0225`, is the same as being *color blind and female*. Notice we naively assumed these two events are independent even though they are not, and the product rule only works if events are independent. We did not incorporate those two conditional probabilities `p_colorblind_given_male` and `p_colorblind_given_female` in our calculations. Should not the probability of a person being *male and color blind* be much higher than *female and color blind*?
+The probability of being *color blind and male*, `0.0225`, is the same as being *color blind and female*. Notice we naively assumed these two events are independent even though they are not, and the product rule only works if events are independent. We did not incorporate those two conditional probabilities `p_colorblind_given_male` and `p_colorblind_given_female` in our calculations. Should not the probability of a person being *male and color blind* be much higher than *female and color blind*? Yes!
 
- When we have conditional probabilities between two events `A` and `B`, they are dependent, not independent. Therefore, we need account for the conditional probability of being *color blind given male* and multiply that instead of probability of being *male*. The same applies for the *female* conditional probability. Here is the corrected code below: 
+ When we have conditional probabilities between two events `A` and `B`, they are dependent rather than independent. Therefore, we need account for the conditional probability of being *color blind given male* and multiply that instead of probability of being *male*. The same applies for the *female* conditional probability. Here is the corrected code below: 
  
 <pre class="file" data-filename="probability_math.py" data-target="replace">
 
@@ -60,7 +60,7 @@ print("P(color blind and female) = {}".format(p_colorblind_and_female))
 
 `python3 probability_math.py`{{execute}}
 
-Think long and hard why this makes sense. If we established that our random person is *male*, we already have that condition achieved and then can proceed to multiply the probability of having color blindness *already given that they are male*. This is why conditional probabilities can be powerful as we can chain previously met conditions and use the respective probability given those conditions are met. 
+We now get `.0036` for being color blind and male, and `.000225` for being color blind and female. Much more believable! Think long and hard why this makes sense. If we established that our random person is *male*, we already have that condition achieved and then can proceed to multiply the probability of having color blindness *already given that they are male*. This is why conditional probabilities can be powerful as we can chain previously met conditions and use the respective probability given those conditions are met. 
 
 We can update our sum rule and product rules for conditional probabilities like this:
 
@@ -78,7 +78,7 @@ P(A and B) = P(A) * P(B)
 P(A or B) = P(A) + P(B) - P(A) * P(B)
 ```
 
-Compare the dependent/independent formulas above. Weirdly, the dependent formulas still work with independent probabilities. With independent probabilities, `P(B given A)` is going to be the same as `P(B)`, as `A` has no impact on `B`. 
+Compare the dependent/independent formulas above. Weirdly, the dependent formulas still work with independent probabilities. With independent probabilities, `P(B given A)` is going to be the same as `P(B)`, as `A` has no impact on `B`. Therefore we can just express `P(B given A)` as `P(B)` when the probabilities are independent.
 
 However, it can be hard in practice to determine if two or events are conditional and related, and therefore it is common in statistics to assume they are independent. We especially see this behavior in machine learning algorithms like Naive Bayes. 
 
