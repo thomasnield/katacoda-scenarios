@@ -5,13 +5,13 @@ However, things get a little more nuanced when we deal with **union probability*
 We typically express union probabilities with the following notations: 
 
 ```
-P(A or B) = P(A) + P(B)
-P(A ∪ B) = P(A) + P(b)
+P(A or B)
+P(A ∪ B)
 ```
 
 **Mutually Exclusive Unions**
 
-Doing an `OR` operation between two or more events that are mutually exclusive is easy. An example of a mutually exclusive event is a die with 6 sides, because only one of the outcomes can occur. We cannot simultaneously get a `2` and a `6` on one die, and the probability of getting both would be 0. If we had two die that would be different and non-mutually exclusive, which we will get to shortly. 
+Doing an `OR` operation between two or more events that are mutually exclusive is easy. An example of a mutually exclusive event is a die with 6 sides, because only one of the outcomes can occur. We cannot simultaneously get a `2` and a `6` on one die, and the probability of getting both would be 0. If we had two die that is an entirely different situation that is not mutually exclusive, and we will get to that shortly. 
 
 But let's say we want to calculate the probability of a `2` or `6` on a single die roll. This is as simple as adding their probabilities together: 
 
@@ -19,7 +19,7 @@ But let's say we want to calculate the probability of a `2` or `6` on a single d
 prob_1 = 1.0 / 6.0
 prob_6 = 1.0 / 6.0
 
-prob_1_or_6 = prob_1 + prob+6
+prob_1_or_6 = prob_1 + prob_6
 print(prob_1_or_6)
 </pre>
 
@@ -28,6 +28,8 @@ print(prob_1_or_6)
 **Non-Mutually Exclusive Unions**
 
 Now let's talk about non-mutally exclusive unions. An example of a non-mutually exclusive event is two die rolls, and expecting at least one of the die to meet criteria. Unlike a single die roll, these two die rolls do not cancel out an event of the other die, and both can have outcomes that are independent.
+
+>Some real-life examples of events that are not mutually exclusive: probability of rain and the price of Microsoft stock going up, getting heads on a coin and a 6 on a die roll, a flight being late and Target having a sales event. These are completely unrelated events that have no bearing on each other. 
 
 Let's start with a scenario that makes the problem of simply adding non-mutally exclusive events obvious. With two dice, I want to get a number 1 through 4 on at least one of the die: 
 
@@ -128,3 +130,7 @@ print(prob_1to4_either)
 
 
 In case you have not noticed, this formula `P(A or B) = P(A) + P(B) - P(A and B)` actually applies whether the probabilities are mutually exclusive or not. If the probabilities are mutually exclusive, the probability of both events `P(A and B)` is going to be `0.0`. Therefore, with mutually exclusive events the `P(A and B)` is omitted. 
+
+```
+P(A or B) = P(A) + P(B) - P(A and B)
+```

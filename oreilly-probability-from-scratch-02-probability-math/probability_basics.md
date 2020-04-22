@@ -1,12 +1,12 @@
 
 Hopefully the concept of **probability** is familiar, which measures how likely and outcome is and typically is represented as a number `P(X)` between 0.0 and 1.0. A single probability on its own is also known as a **marginal probability**. 
 
-If we have a 60% belief an event will happen (such as a product being defective), it would be expressed as 0.6. We may have this belief because out of 10 products we sampled, 6 were defective. Because all outcomes of an event must add up to 100%, or 1.0, the probability of an event not occuring is `1.0 - P(X)`.
+If we have a 60% belief an event will happen (such as a product being defective), it would be expressed as 0.6. We may have this belief because out of 100 products we sampled, 60 were defective. Because all outcomes of an event must add up to 100%, or 1.0, the probability of an event not occuring is `1.0 - P(X)`.
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">
 
-defective_count = 6.0
-total_count = 10.0
+defective_count = 60.0
+total_count = 100.0
 
 defective_probability = defective_count / total_count
 </pre>

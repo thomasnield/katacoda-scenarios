@@ -9,6 +9,9 @@ Males are more prone to color blindness than females. The probability of any ran
 
 ```
 P(color blind) = .045
+P(male) = .50
+P(female) = .50
+
 P(color blind | male) = .08
 P(color blind | female) = .005
 ```
@@ -36,6 +39,8 @@ print("P(color blind and female) = {}".format(p_colorblind_and_female))
 
 `python3 probability_math.py`{{execute}}
 
+
+>Some real-life examples of events that might be dependent: probability of rain and 100 umbrellas getting sold, a dog barking when a door is knocked, a flight being late and severe storm warnings. These events might have a correlation and causality involved, so there might be a conditional probability relationship between the two.
 
 The probability of being *color blind and male*, `0.0225`, is the same as being *color blind and female*. Notice we naively assumed these two events are independent even though they are not, and the product rule only works if events are independent. We did not incorporate those two conditional probabilities `p_colorblind_given_male` and `p_colorblind_given_female` in our calculations. Should not the probability of a person being *male and color blind* be much higher than *female and color blind*? Yes!
 
