@@ -23,6 +23,8 @@ print(prob_heads_and_6)
 
 `python3 probability_math.py`{{execute}}
 
+This is known as the **product rule**, where we combine independent probabilities to occur simultaneously using multiplication. 
+
 Need some intuition behind this? In the Python below, create all possible combinations of heads/tails and 1/2/3/4/5/6 outcomes. You will see only one outcome is a "head" and a "6", out of 12 possible outcomes, so `1/12 = .083333`.
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">
@@ -65,7 +67,16 @@ print("Probability of 3 consecutive failures: {}".format(three_fails_prob))
 
 We keep accumulating the combinined probability with the next probability in the loop, and do that for 3 iterations. 
 
-A subtle problem can creep in when you start multiplying several decimals together: **floating point underflow**. This means the number can get so small it starts to approach zero and lose track. We can do a clever hack to avoid this by using logarithmic addition as shown below: 
+
+So to generalize the product rule to combine independent probabilities occurring simultaneously, here are the formulas: 
+
+```
+P(A and B) = P(A) * P(B)
+P(A and B and C) = P(A) * P(B) * P(C)
+P(A and B and ... and N) = P(A) * P(B) * ... * P(N)
+```
+
+NOTE: A subtle problem can creep in when you start multiplying several decimals together: **floating point underflow**. This means the number can get so small it starts to approach zero and lose track. We can do a clever hack to avoid this by using logarithmic addition as shown below: 
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">
 from math import log, exp 
@@ -84,6 +95,8 @@ print("Probability of 3 consecutive failures: {}".format(three_fails_prob))
 </pre>
 
 `python3 probability_math.py`{{execute}}
+
+
 
 If you are unfamiliar with logarithms, just know that they allow us to bypass the floating point underflow issue by using addition instead of multiplication. There are several online tutorials to learn about logarithms, including the ones below: 
 

@@ -15,6 +15,10 @@
 		{
 			"title": "Union Probability (OR)",
 			"text": "union_probability.md"
+		},
+		{
+			"title": "Conditional Probability",
+			"text": "conditional_probability.md"
 		}
 		],
 		"intro": {

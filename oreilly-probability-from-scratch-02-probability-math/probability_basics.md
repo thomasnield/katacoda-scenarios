@@ -3,6 +3,14 @@ Hopefully the concept of **probability** is familiar, which measures how likely 
 
 If we have a 60% belief an event will happen (such as a product being defective), it would be expressed as 0.6. We may have this belief because out of 10 products we sampled, 6 were defective. Because all outcomes of an event must add up to 100%, or 1.0, the probability of an event not occuring is `1.0 - P(X)`.
 
+<pre class="file" data-filename="probability_math.py" data-target="replace">
+
+defective_count = 6.0
+total_count = 10.0
+
+defective_probability = defective_count / total_count
+</pre>
+
 Probabilities have many uses in data science, statistics, machine learning, and many other disciplines. A fun way to use probabilities is to create simulations. For example, here is a simple simulation that does 100 weighted coin flips with a .6 probability for heads: 
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">

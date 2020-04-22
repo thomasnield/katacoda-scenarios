@@ -5,8 +5,8 @@ However, things get a little more nuanced when we deal with **union probability*
 We typically express union probabilities with the following notations: 
 
 ```
-P(A or B)
-P(A ∪ B)
+P(A or B) = P(A) + P(B)
+P(A ∪ B) = P(A) + P(b)
 ```
 
 **Mutually Exclusive Unions**
@@ -71,6 +71,9 @@ broken_probability_either_1_thru_4 = \
 print("BROKEN PROBABILITY OF EITHER DIE BEING 1-4: {}".format(broken_probability_either_1_thru_4))
 </pre>
 
+`python3 probability_math.py`{{execute}}
+
+
 To fix this, we eliminate the double-counting instances where both die outcomes were the numbers 1-4. You will notice a change in my code below where I subtract the overlap instances where both die are numbers 1-4 `len(first_is_1_thru_4) + len(second_is_1_thru_4) - len(overlap)`:
 
 <pre class="file" data-filename="probability_math.py" data-target="replace">
@@ -100,6 +103,9 @@ print("CORRECT PROBABILITY OF EITHER DIE BEING 1-4: {}".format(correct_probabili
 
 </pre>
 
+`python3 probability_math.py`{{execute}}
+
+
 Without doing all this permutation work, we can calculate this using the **sum rule of probability**, where we can find the `OR` probability between two events by subtracting their `AND` probability from their sum: 
 
 ```
@@ -117,3 +123,8 @@ prob_1to4_either = prob_roll_1_1to4 + prob_roll_2_1to4 -
 	
 print(prob_1to4_either)
 </pre>
+
+`python3 probability_math.py`{{execute}}
+
+
+In case you have not noticed, this formula `P(A or B) = P(A) + P(B) - P(A and B)` actually applies whether the probabilities are mutually exclusive or not. If the probabilities are mutually exclusive, the probability of both events `P(A and B)` is going to be `0.0`. Therefore, with mutually exclusive events the `P(A and B)` is omitted. 
