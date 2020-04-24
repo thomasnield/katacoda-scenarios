@@ -1,0 +1,1 @@
+Hopefully this gives you a greater intuition on how Monty Hall, Monte Carlo simulations, and Bayes Theorem works. Probabilities are often taken for granted, and yet so misunderstood! They have so many subtleties and the Monty Hall problem shows how we can deceive ourselves into calculating our odds. 

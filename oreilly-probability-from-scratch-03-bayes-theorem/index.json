@@ -1,0 +1,30 @@
+{
+	"title": "Bayes Theorem",
+	"description": "Learn the fundamental operations in working with probabilities",
+	"difficulty": "beginner",
+	"time": "15 minutes",
+	"details": {
+		"steps": [
+		{
+			"title": "Bayes Theorem",
+			"text": "bayes_theorem.md"
+		}
+		],
+		"intro": {
+			"text": "intro.md",
+			"credits": "",
+			"code": "initialize.sh"
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"environment": {
+		"uilayout": "editor-terminal",
+		"uimessage1": "\u001b[32mIntroduction "
+	},
+	"files" : ["probability_math.py"],
+	"backend": {
+		"imageid": "bash"
+	}
+}
