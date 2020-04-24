@@ -1,6 +1,6 @@
-To get some intuition behind this, it is first best to show that something is off with our assumptions. Just because we hear "85% of violent criminals are likely to have played violent video games", does not mean 85% of gamers are violent criminals. 
+Just because we hear "85% of violent criminals are likely to play violent video games", does not mean 85% of people who play video games are violent criminals.  To get some intuition behind this, it helps to simulate an experiment.
 
-Let's look at something. Run the Python code below: 
+Run the Python code below: 
 
 <pre class="file" data-filename="bayes_theorem.py" data-target="replace">
 population = 100_000.0
@@ -24,9 +24,7 @@ What we did is some simple math with a population of 100,000 people. If 19% of t
 
 **Are we really going to go after those 19,000 video gamers? Even though only 8 or 9 of them are homicidal criminals**. 
 
-You might be thinking "well, of course! This is basic math." But notice how something in plain sight gets lost in percentages, and that percentage is relative to one group and can be very different relative to another group. 
-
-**What we effectively have done is take an uncommon attribute (being homicidal) and associated it with a common one (playing video games)**. 
+Notice how something in plain sight gets lost in percentages. That percentage of video gamers is relative to one group and can be very different relative to another group.  **What we effectively have done is take an uncommon attribute (being homicidal) and associated it with a common one (playing video games)**. 
 
 So how does this trace back to Bayes Theorem? Let's modify our code below to calculate the percentage of the gamer population that are homicidal:
 
