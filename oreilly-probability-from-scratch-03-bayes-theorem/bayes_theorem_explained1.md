@@ -9,13 +9,13 @@ p_gamer_given_homicidal = .85
 p_gamer = .19
 p_homicidal = .0001
 
-gamers = population * p_gamer
-homicidal_criminals = population * p_homicidal
-gamers_and_homicidal = homicidal_criminals * p_gamer_given_homicidal
+gamers_ct = population * p_gamer
+homicidal_criminals_ct = population * p_homicidal
+gamers_and_homicidal_ct = homicidal_criminals_ct * p_gamer_given_homicidal
 
-print("#Gamers: {}".format(gamers))
-print("#Homicidal Criminals: {}".format(homicidal_criminals))
-print("#Gamers who are homicidal criminals: {}".format(gamers_and_homicidal))
+print("#Gamers: {}".format(gamers_ct))
+print("#Homicidal Criminals: {}".format(homicidal_criminals_ct))
+print("#Gamers who are homicidal criminals: {}".format(gamers_and_homicidal_ct))
 </pre>
 
 `python3 bayes_theorem.py`{{execute}}
@@ -37,13 +37,16 @@ p_gamer_given_homicidal = .85
 p_gamer = .19
 p_homicidal = .0001
 
-gamers = population * p_gamer
-homicidal_criminals = population * p_homicidal
-gamers_and_homicidal = homicidal_criminals * p_gamer_given_homicidal
+gamers_ct = population * p_gamer
+homicidal_criminals_ct = population * p_homicidal
+gamers_and_homicidal_ct = homicidal_criminals_ct * p_gamer_given_homicidal
 
-p_homicidal_given_gamer = gamers_and_homicidal / gamers
+p_homicidal_given_gamer = gamers_and_homicidal_ct / gamers_ct
 
 print("Probability of homicidal given gamer: {}".format(p_homicidal_given_gamer))
 </pre>
+
+`python3 bayes_theorem.py`{{execute}}
+
 
 For such simple math, there are so many nuances here! Notice the relationship between joint probabilities and conditional probabilities, and how they are really just based on sub-groups in the population. Let's dive into this next.

@@ -70,15 +70,3 @@ print(p_homicidal)
 When you run this, you will see that we get .0004, or .04%, probability that someone is homicidal given they play violent video games. Wow! This is a much different number than 85%. 
 
 So what has happened here? What is so special about this Bayes Theorem formula? 
-
-**Resources:**
-
-The Debate Behind Video Game Violence (CNBC)
-https://www.youtube.com/watch?v=uaf_Xjz6Mxs
-
-Think Bayes (O'Reilly)
-https://learning.oreilly.com/library/view/think-bayes/9781491945407/
-
-Bayesian Statistics the Fun Way (No Starch)
-https://learning.oreilly.com/library/view/bayesian-statistics-the/9781098122492/
-
