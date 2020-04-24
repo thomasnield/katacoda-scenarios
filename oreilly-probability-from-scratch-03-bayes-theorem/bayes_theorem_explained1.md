@@ -24,7 +24,7 @@ What we did is some simple math with a population of 100,000 people. If 19% of t
 
 **Are we really going to go after those 19,000 video gamers? Even though only 8 or 9 of them are homicidal criminals**. 
 
-You might be thinking "well, of course! This is basic math." But notice how something in plain sight gets lost in percentages, and that percentage is relative to one group but can be very different relative to another group. 
+You might be thinking "well, of course! This is basic math." But notice how something in plain sight gets lost in percentages, and that percentage is relative to one group and can be very different relative to another group. 
 
 **What we effectively have done is take an uncommon attribute (being homicidal) and associated it with a common one (playing video games)**. 
 
@@ -46,4 +46,4 @@ p_homicidal_given_gamer = gamers_and_homicidal / gamers
 print("Probability of homicidal given gamer: {}".format(p_homicidal_given_gamer))
 </pre>
 
-For such simple math, there are so many nuances here! Notice the relationship between joint probabilities and conditional probabilities here, and how they are really just based on sub-groups in the population. Let's dive into this next.
+For such simple math, there are so many nuances here! Notice the relationship between joint probabilities and conditional probabilities, and how they are really just based on sub-groups in the population. Let's dive into this next.
