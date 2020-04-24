@@ -1,6 +1,6 @@
 {
-	"title": "Bayes Theorem",
-	"description": "Learn the fundamental operations in working with probabilities",
+	"title": "Discovering Bayes Theorem",
+	"description": "Discover and learn Bayes Theorem using Python",
 	"difficulty": "beginner",
 	"time": "15 minutes",
 	"details": {
@@ -31,7 +31,7 @@
 		"uilayout": "editor-terminal",
 		"uimessage1": "\u001b[32mIntroduction "
 	},
-	"files" : ["probability_math.py"],
+	"files" : ["bayes_theorem.py"],
 	"backend": {
 		"imageid": "bash"
 	}
