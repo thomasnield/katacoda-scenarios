@@ -56,7 +56,7 @@ print("Probability of homicidal given gamer: {}".format(p_homicidal_given_gamer)
 `python3 bayes_theorem.py`{{execute}}
 
 
-Now you can see why Bayes Theorem is arguably the most important formula in probability. It allows us to make inferences and flip those inferences as needed. You will find its application critical in many disciplines including medicine, law, business, economics, and anywhere else that touches data and statistics. In conditional probability, it is a critical tool you will use again and again. 
+Now you can see why Bayes Theorem is arguably the most important formula in probability. It allows us to make inferences and flip those inferences as needed. You will find its application critical in many disciplines including medicine, law, business, economics, and anywhere else that touches data and statistics. As a defining component of conditional probability, it is a critical tool you will use again and again. 
 
 **Resources:**
 
