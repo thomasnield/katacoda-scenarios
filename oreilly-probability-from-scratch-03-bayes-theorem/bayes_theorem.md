@@ -13,7 +13,7 @@ P(gamer|homicidal) = .85
 P(homicidal|gamer) = ?
 ```
 
-But first we will simply Bayes Theorm formula, which allows us to flip a conditional probability in the reverse direction. We will dissect why the formula works later, but first let's see how it applies here. 
+We will start by simply applying Bayes Theorem, which allows us to flip a conditional probability in the reverse direction. We will dissect why the formula works later, but first let's see how it applies. 
 
 
 **Bayes Theorem**
@@ -39,7 +39,7 @@ print(p_homicidal)
 
 Merging data from various sources, you believe that 19% of the population plays violent video games. 
 
-We now have three pieces of information needed to flip our conditional probability. We can now convert our probability a person has *played violent video games given they are homicidal* to the probability a person is *homicidal given they have played violent video games. 
+We now have three pieces of information needed to flip our conditional probability. We can now convert our probability *a person has played violent video games given they are homicidal* to the probability a person is *homicidal given they have played violent video games*. 
 
 First let's work out the match by hand: 
 
@@ -53,13 +53,13 @@ P(Homicidal|Gamer) = 0.0004
 We can also do this in Python: 
 
 <pre class="file" data-filename="bayes_theorem.py" data-target="replace">
-
 p_gamer_given_homicidal = .85
-p_homicidal = 17251.0 / 324000000.0
 p_gamer = .19
+p_homicidal = .0001
 
 p_homicidal_given_gamer = p_gamer_given_homicidal * p_homicidal / p_gamer
-print(p_homicidal)
+
+print("Probability of homicidal given gamer: {}".format(p_homicidal_given_gamer))
 </pre>
 
 `python3 bayes_theorem.py`{{execute}}

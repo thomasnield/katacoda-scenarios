@@ -29,7 +29,7 @@ Notice how something in plain sight gets lost in percentages. That percentage of
 So how does this trace back to Bayes Theorem? Let's modify our code below to calculate the percentage of the gamer population that are homicidal:
 
 <pre class="file" data-filename="bayes_theorem.py" data-target="replace">
-population = 100_000.0
+population = 100000.0
 
 p_gamer_given_homicidal = .85
 p_gamer = .19
