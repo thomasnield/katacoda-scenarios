@@ -1,9 +1,9 @@
-Probably the best way to derive Bayes Theorem from our code (on the previous page) is to expand out every variable in its expression. 
+Probably the best way to derive Bayes Theorem from our code on the previous page is to expand out every variable in its expression. 
 
 Let's focus on two variables: `gamers_and_homicidal_ct` and `p_homicidal_given_gamer`. If we trace back the steps, we can expand their expressions by replacing the variables with their expressions. Here it is re-expressed in the Python code file: 
 
 <pre class="file" data-filename="bayes_theorem.py" data-target="replace">
-population = 100_000.0
+population = 100000.0
 
 p_gamer_given_homicidal = .85
 p_gamer = .19
